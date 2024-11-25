@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DivStudio - Eventos de Minecraft</title>
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/bulma.min.css" />
+    <link rel="stylesheet" href="/styles/animate.min.css" />
+
+    <link rel="icon" type="/image/png" href="/Images/Logo.png" />
+    <script src="script.js"></script>
+  </head>
+  <body style="background-color: #02000f">
+    <!-- ~ ------------------- Navbar ------------------- -->
+    <header class="navbar is-fixed-top animate__animated animate__fadeInDown">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#Welcome">
+          <img
+            src="/Images/LogoLong.png"
+            alt="Logo"
+            style="max-height: 4rem"
+            class="is-hidden-tablet"
+            onclick="closeNavbar()"
+          />
+          <img
+            class="is-hidden-mobile"
+            src="/Images/Logo.png"
+            alt="Logo"
+            style="max-height: 5rem"
+            onclick="closeNavbar()"
+          />
+        </a>
+        <!-- Burger icon -->
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          onclick="toggleNavbar()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- * ------------------- Navbar Menu ------------------- -->
+      <div class="navbar-menu" id="navbarMenu">
+        <div class="navbar-start" style="font-size: 1.2rem">
+          <a class="navbar-item" href="#AboutUs" onclick="toggleNavbar()"
+            >Sobre nosotros</a
+          >
+          <a class="navbar-item" href="#Team" onclick="toggleNavbar()"
+            >Equipo</a
+          >
+          <a class="navbar-item" href="#Contact" onclick="toggleNavbar()"
+            >Contacto</a
+          >
+          <a class="navbar-item" href="/Events" onclick="toggleNavbar()"
+            >Eventos</a
+          >
+        </div>
+        <div
+          class="navbar-end"
+          style="display: flex; align-items: center; height: 100%"
+        >
+          <a
+            class="button is-warning mr-3 is-hidden-touch"
+            href="https://x.com/DivStudioO/"
+            target="_blank"
+            >Siguenos en Twitter!</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ~ ------------------- Welcome ------------------- -->
+    <section class="hero is-fullheight" id="Welcome">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1
+            class="title animate__animated animate__fadeInDown is-size-1-mobile "
+            style="font-size: 4rem"
+          >
+            Bienvenido a DivStudios
+          </h1>
+          <p class="subtitle WelcomeSub" id="subtitles">
+            <span>T</span><span>u</span> <span>p</span><span>u</span
+            ><span>e</span><span>r</span><span>t</span><span>a</span>
+            <span>d</span><span>e</span> <span>e</span><span>n</span
+            ><span>t</span><span>r</span><span>a</span><span>d</span
+            ><span>a</span> <span>a</span> <span>e</span><span>v</span
+            ><span>e</span><span>n</span><span>t</span><span>o</span
+            ><span>s</span> <span>d</span><span>e</span> <span>m</span
+            ><span>i</span><span>n</span><span>e</span><span>c</span
+            ><span>r</span><span>a</span><span>f</span><span>t</span
+            ><span>!</span> <span>E</span><span>x</span><span>p</span
+            ><span>l</span><span>o</span><span>r</span><span>a</span
+            ><span>,</span> <span>p</span><span>a</span><span>r</span
+            ><span>t</span><span>i</span><span>c</span><span>i</span
+            ><span>p</span><span>a</span> <span>y</span> <span>e</span
+            ><span>x</span><span>p</span><span>e</span><span>r</span
+            ><span>i</span><span>m</span><span>e</span><span>n</span
+            ><span>t</span><span>a</span> <span>l</span><span>o</span>
+            <span>m</span><span>e</span><span>j</span><span>o</span
+            ><span>r</span> <span>d</span><span>e</span> <span>m</span
+            ><span>i</span><span>n</span><span>e</span><span>c</span
+            ><span>r</span><span>a</span><span>f</span><span>t</span>
+            <span>c</span><span>o</span><span>n</span> <span>n</span
+            ><span>o</span><span>s</span><span>o</span><span>t</span
+            ><span>r</span><span>o</span><span>s</span><span>!</span>
+          </p>
+          <div class="buttons is-centered animate__animated animate__fadeInUp">
+            <a class="button is-primary is-rounded py-4" href="/Events"
+              >Explora nuestros eventos!</a
+            >
+            <a
+              class="button is-primary is-outlined is-rounded py-4"
+              href="https://x.com/DivStudioO/"
+              target="_blank"
+              >Siguenos en Twitter!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~ ------------------- About us ------------------- -->
+    <section class="hero is-fullheight" id="AboutUs">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-size-1-mobile" style="font-size: 4rem">Sobre nosotros</h1>
+          <p class="subtitle">
+            Bienvenidos a DivStudio, desarrolladores e impulsadores de eventos
+            de Minecraft!
+            <br />
+            Pequeños nuevos talentos listos para llevar tu evento de Minecraft
+            al siguiente nivel.
+            <br />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~ ------------------- Team ------------------- -->
+    <section class="hero is-fullheight" id="Team">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-size-1-mobile" style="font-size: 4rem">Equipo</h1>
+          <p class="subtitle">Descripcion para la tercera seccion de heroe.</p>
+          <div class="columns is-multiline is-centered">
+            <!-- CEO -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder.png"
+                    class="card-image"
+                    alt="CEO Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">CEO</p>
+                    <a
+                      href="https://linktr.ee/eldivier"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >ElDivier</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Co-Owner -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder.png"
+                    class="card-image"
+                    alt="Co-Owner Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">Co-Owner</p>
+                    <a
+                      href="https://eriphantomhive.carrd.co/"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Eri Phantomhive</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Gerente general -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder.png"
+                    class="card-image"
+                    alt="Gerente Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">Gerente general</p>
+                    <a
+                      href="https://randomike.carrd.co/"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Randomike</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Community Manager -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder.png"
+                    class="card-image"
+                    alt="Community Manager Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">Community Manager</p>
+                    <a
+                      href="https://linktr.ee/DonAndriuw"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Don Andriuw</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Dev -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder.png"
+                    class="card-image"
+                    alt="Dev Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">Developer</p>
+                    <a
+                      href="https://miverdaderodominio.net/"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Civer_mau</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Server manager -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder.png"
+                    class="card-image"
+                    alt="Server Manager Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">Server manager</p>
+                    <a
+                      href="https://www.twitch.tv/chitovader2000"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Chitovader2000</a
+                    >
+                    <a
+                      href="https://linktr.ee/SilveritoGM"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >SilveritoGM</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Builder -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder.png"
+                    class="card-image"
+                    alt="Builder Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">Builder</p>
+                    <a
+                      href="https://www.twitch.tv/dekugamer231"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Dekugamer231</a
+                    >
+                    <a
+                      href="https://www.youtube.com/@juanpa579yt"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Juanpa579</a
+                    >
+                    <a
+                      href="https://linktr.ee/lord_m4"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Lord M4</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Diseñador -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content is-flex is-align-items-center p-0">
+                  <img
+                    src="/Images/Team/Placeholder-green.png"
+                    class="card-image"
+                    alt="Designer Image"
+                  />
+                  <div class="content-center">
+                    <p class="title">Diseñador</p>
+                    <a
+                      href="https://linktr.ee/El_aguacate"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >El Aguacate</a
+                    >
+                    <a
+                      href="https://vgen.co/chinche_xd"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >Chinche_xd</a
+                    >
+                    <a
+                      href="https://linktr.ee/ShantiMor"
+                      class="button is-link is-outlined"
+                      target="_blank"
+                      >ShantiMor</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~ ------------------- Contact ------------------- -->
+    <section class="hero is-fullheight" id="Contact">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-size-1-mobile" style="font-size: 4rem">Contacto</h1>
+          <p class="subtitle">
+            Contáctanos para cualquier duda, sugerencia o colaboración.
+          </p>
+          <form name="contact" method="POST" netlify>
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Nombre</label>
+                  <div class="control">
+                    <input
+                      class="input is-info"
+                      type="text"
+                      name="name"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input
+                      class="input is-info"
+                      type="email"
+                      name="email"
+                      placeholder="Tu email"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Mensaje</label>
+              <div class="control">
+                <textarea
+                  class="textarea is-info"
+                  name="message"
+                  placeholder="Escribe tu mensaje aqui"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="control">
+              <button class="button is-warning" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~ ------------------- Footer ------------------- -->
+    <footer class="footer pb-6">
+      <div class="content has-text-centered">
+        <p>
+          <strong>DivStudios</strong> © 2024. Todos los derechos reservados. |
+          <a href="#">Politica de privacidad</a> |
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
