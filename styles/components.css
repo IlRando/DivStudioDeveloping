@@ -11,8 +11,9 @@
 }
 
 .card-image {
-  height: 22vh;
+  height: 14rem; /* Set the desired height */
   border-radius: 5% !important;
+  object-fit: cover; /* Add this property */
 }
 
 .is-info {
@@ -22,6 +23,17 @@
 
 .button {
   margin: 0.25rem !important;
+}
+
+.button.is-link.is-outlined:hover {
+  border-color: #ccc; /* change to your desired hover border color */
+  transition: border-color 0.1s ease-in-out;
+}
+
+.button.is-link.is-outlined:hover {
+  border-color: #ccc; /* change to your desired hover border color */
+  color: #fff; /* change to your desired hover text color */
+  transition: border-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 .event-item {
@@ -54,8 +66,14 @@
   margin: 0;
 }
 
+#eventList {
+  margin-top: 50px; /* match the margin-top value of #eventDetails */
+}
+
 #eventDetails {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
+  margin-top: 50px; /* adjust this value to your needs */
+  padding-bottom: 150px; /* add some space inside the container */
 }
 
 .event-details {
