@@ -100,3 +100,37 @@ html::-webkit-scrollbar {
 .button{
   margin: 0.25rem !important;
 }
+
+.event-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.event-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.event-item div {
+  display: flex;
+  flex-direction: column; /* Stack title and info vertically */
+}
+
+.event-item h2 {
+  font-weight: bold; /* Make the title bold */
+  margin: 0;
+}
+
+.event-item p {
+  margin: 0;
+}
+
+#eventDetails {
+  padding-left: 1rem;
+}

@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #00010c !important;
+}
+
+.navbar-menu {
+  background-color: #00010ce7 !important;
+  text-align: center;
+}
+
+.navbar-menu.is-active {
+  animation: slideDown 0.5s forwards ease-in-out;
+}
+
+.navbar-menu.is-closing {
+  animation: slideUp 0.5s forwards ease-in-out;
+}

@@ -1,0 +1,79 @@
+.content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.card {
+  box-shadow: none !important;
+}
+
+.card-image {
+  height: 22vh;
+  border-radius: 5% !important;
+}
+
+.is-info {
+  background-color: #000431 !important;
+  border-color: #230050 !important;
+}
+
+.button {
+  margin: 0.25rem !important;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.event-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.event-item div {
+  display: flex;
+  flex-direction: column; /* Stack title and info vertically */
+}
+
+.event-item h2 {
+  font-weight: bold; /* Make the title bold */
+  margin: 0;
+}
+
+.event-item p {
+  margin: 0;
+}
+
+#eventDetails {
+  padding-left: 1rem;
+}
+
+.event-details {
+  display: flex;
+  align-items: flex-start;
+}
+
+.event-details img {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.event-details-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.event-details-description {
+  font-size: 1rem;
+  font-weight: normal;
+}

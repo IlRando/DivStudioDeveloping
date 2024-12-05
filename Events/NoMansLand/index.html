@@ -1,1 +1,97 @@
-Que mira bobo
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DivStudios - No Man's Land</title>
+    
+    <link rel="stylesheet" href="/styles/no-mans-land.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/animate.min.css" />
+    <link rel="stylesheet" href="/styles/bulma.min.css" />
+    <link rel="icon" type="/image/png" href="/Images/Logo.png" />
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/tabs.js"></script>
+  </head>
+  <body style="background-color: #02000f">
+    <!-- ~ ------------------- Navbar ------------------- -->
+    <header class="navbar is-fixed-top animate__animated animate__fadeInDown">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img
+            src="/Images/LogoLong.png"
+            alt="Logo"
+            style="max-height: 4rem"
+            class="is-hidden-tablet"
+            onclick="closeNavbar()"
+          />
+          <img
+            class="is-hidden-mobile"
+            src="/Images/Logo.png"
+            alt="Logo"
+            style="max-height: 5rem"
+            onclick="closeNavbar()"
+          />
+        </a>
+        <!-- Burger icon -->
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          onclick="toggleNavbar()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- * ------------------- Navbar Menu ------------------- -->
+      <div class="navbar-menu" id="navbarMenu">
+        <div class="navbar-start" style="font-size: 1.2rem">
+
+        </div>
+        <div
+          class="navbar-end"
+          style="display: flex; align-items: center; height: 100%"
+        >
+          <a
+            class="button is-warning mr-3 is-hidden-touch"
+            href="https://x.com/DivStudioO/"
+            target="_blank"
+            >Siguenos en Twitter!</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ~ ------------------- Hero Section ------------------- -->
+    <section class="hero is-halfheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">No Man's Land</h1>
+          <p class="subtitle">El campo de batalla te espera</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~ ------------------- Tabs Section ------------------- -->
+    <section class="section">
+      <div class="container">
+        <div class="tabs is-boxed is-centered">
+          <ul>
+            <li class="is-active"><a>Participantes</a></li>
+            <li><a>Reglas</a></li>
+            <li><a>Mods</a></li>
+            <li><a>Información general</a></li>
+          </ul>
+        </div>
+        <div id="tabContent">
+          <!-- Content for each tab will go here -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

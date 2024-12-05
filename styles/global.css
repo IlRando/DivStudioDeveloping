@@ -1,0 +1,36 @@
+html, body {
+  scroll-behavior: smooth;
+  margin: 100;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.WelcomeSub span {
+  opacity: 0;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #00010c !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5px; /* adjust the height to your desired value */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Team .hero-body {
+  padding-top: calc(82px) !important; /* adjust to the height of your top navbar */
+  padding-bottom: calc(1000px) !important; /* adjust to the height of your footer */
+}
+
+.spacer {
+  height: 500px; /* adjust to the desired space between sections */
+}

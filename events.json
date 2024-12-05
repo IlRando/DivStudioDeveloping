@@ -1,0 +1,14 @@
+{
+  "event1": {
+    "title": "No man's land",
+    "description": "El rugido de los motores del avión marca el inicio de la batalla. Desde las alturas, te lanzas como un verdadero soldado al frente de combate, armado con tu valentía y el deseo de sobrevivir. En tierra, cada segundo es clave: saquea armas poderosas, equipa tu arsenal y prepárate para enfrentarte a rivales dispuestos a luchar hasta el final. <br><br>En esta guerra, no hay aliados, solo enemigos. No se busca la paz, sino la victoria. El camino será arduo, pero solo un verdadero soldado permanecerá en pie cuando el polvo se disipe. <br><br>Solo 100 serán reclutados, y habrá 20 esperando al llamado para entrar en el campo de batalla. ¡Asegúrate de confirmar tu participación pronto y no perder tu lugar!.",
+    "image": "/Images/Event1Detail.png",
+    "link": "/Events/NoMansLand"
+  },
+  "event2": {
+    "title": "Futuros eventos",
+    "description": "Tenemos algunas futuras colaboraciones que esperamos anunciar pronto. Mantente al pendiente de nuestras redes sociales para no perderte ninguna actualización.",
+    "image": "/Images/Event2Detail.png",
+    "link": "/Events/FutureEvents"
+  }
+}
