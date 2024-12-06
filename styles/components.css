@@ -76,6 +76,13 @@
   padding-bottom: 150px; /* add some space inside the container */
 }
 
+@media (max-width: 768px) {
+  .event-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .event-details {
   display: flex;
   align-items: flex-start;
@@ -94,4 +101,6 @@
 .event-details-description {
   font-size: 1rem;
   font-weight: normal;
+  margin-bottom: 10px;
+  text-align: justify;
 }
