@@ -47,35 +47,90 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function displayPlayers(players) {
+    function displayPlayers(players, page = 1) {
         const playerGrid = document.createElement('div');
         playerGrid.className = 'player-grid';
+    
+        // Calculate the number of pages
+        const pageSize = 10; // Number of players per page
+        const totalPages = Math.ceil(players.length / pageSize);
+    
+        // Create pagination links
+        const paginationLinks = document.createElement('div');
+        paginationLinks.className = 'pagination-links';
 
-        players.forEach(player => {
-            const playerCard = `
-                <a href="https://twitch.tv/${player.twitch}" 
-                   target="_blank" 
-                   class="player-card animate__animated animate__fadeInUp ${player.status}"
-                   rel="noopener noreferrer">
-                    <div class="player-card-inner">
-                        <img src="https://mc-heads.net/avatar/${player.username}" 
-                             alt="${player.username}'s avatar">
-                        <h3 class="player-name">${player.username}</h3>
-                        <p class="player-quote">"${player.quote}"</p>
-                    </div>
-                </a>
-            `;
-            playerGrid.innerHTML += playerCard;
+        // Add "Anterior" button
+        const prevButton = document.createElement('a');
+        prevButton.href = '#';
+        prevButton.textContent = 'Anterior';
+        prevButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Add this line
+        const currentPage = page > 1 ? page - 1 : 1;
+        displayPlayers(players, currentPage);
         });
+        paginationLinks.appendChild(prevButton);
 
-        tabContent.innerHTML = '';
-        tabContent.appendChild(playerGrid);
-
-        document.querySelectorAll('.player-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.classList.remove('animate__animated', 'animate__fadeInUp');
+        // Create page number links
+        for (let i = 1; i <= totalPages; i++) {
+            const link = document.createElement('a');
+            link.href = '#';
+            link.textContent = i;
+            link.addEventListener('click', (event) => {
+            event.preventDefault(); // Add this line
+            displayPlayers(players, i);
             });
+            paginationLinks.appendChild(link);
+        }
+
+        // Add "Siguiente" button
+        const nextButton = document.createElement('a');
+        nextButton.href = '#';
+        nextButton.textContent = 'Siguiente';
+        nextButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Add this line
+        const currentPage = page < totalPages ? page + 1 : totalPages;
+        displayPlayers(players, currentPage);
         });
+        paginationLinks.appendChild(nextButton);
+
+        // Display players for the selected page
+        displayPlayersPage(players, page, pageSize);
+    
+        // Append pagination links to the tab content
+        tabContent.appendChild(paginationLinks);
+    
+        // Function to display players for a specific page
+        function displayPlayersPage(players, page, pageSize) {
+            const start = (page - 1) * pageSize;
+            const end = start + pageSize;
+            const playersPage = players.slice(start, end);
+    
+            // Clear the player grid
+            playerGrid.innerHTML = '';
+    
+            playersPage.forEach(player => {
+                const playerCard = `
+                    <a href="https://twitch.tv/${player.twitch}" 
+                       target="_blank" 
+                       class="player-card animate__animated animate__fadeInUp ${player.status}"
+                       rel="noopener noreferrer">
+                        <div class="player-card-inner">
+                            <img src="https://mc-heads.net/avatar/${player.username}" 
+                                 alt="${player.username}'s avatar">
+                            <h3 class="player-name">${player.username}</h3>
+                            <p class="player-quote">"${player.quote}"</p>
+                        </div>
+                    </a>
+                `;
+                playerGrid.innerHTML += playerCard;
+            });
+    
+            prevButton.className = 'prev-button';
+            nextButton.className = 'next-button';
+
+            tabContent.innerHTML = '';
+            tabContent.appendChild(playerGrid);
+        }
     }
 
     // Load initial content

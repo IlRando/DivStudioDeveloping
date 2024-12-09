@@ -72,3 +72,47 @@
     border-color: rgba(255, 215, 0, 0.8); /* Darker gold on hover */
     background-color: rgba(255, 215, 0, 0.2);
 }
+
+.pagination-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination-links a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #09012e;
+    color: #cccccc;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .pagination-links a:hover {
+    background-color: #337ab7;
+    color: #fff;
+  }
+  
+  .pagination-links a.is-active {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+  }
+
+  .pagination-links .prev-button,
+  .pagination-links .next-button {
+    background-color: #09012e;
+    color: #cccccc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .pagination-links .prev-button:hover,
+  .pagination-links .next-button:hover {
+    background-color: #23527c;
+    color: #fff;
+  }
