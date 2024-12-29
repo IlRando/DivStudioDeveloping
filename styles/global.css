@@ -44,3 +44,7 @@ html::-webkit-scrollbar {
   margin-bottom: 35px;
   margin-left: 75px;
 }
+
+.footer{
+  background-color: #00010c !important;
+}

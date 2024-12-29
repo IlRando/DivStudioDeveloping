@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 break;
             case 'Reglas':
-                tabContent.innerHTML = '<img src="/Images/Rules.png" alt="Rules Image">';
+                tabContent.innerHTML = '<img src="/Images/NoMansLand/Rules.png" alt="Rules Image">';
                 break;
             case 'Mods':
                 tabContent.innerHTML = '<p>Lista de mods aquí...</p>';
                 break;
             case 'Información general':
-                tabContent.innerHTML = '<p>Información general aquí...</p>';
+                tabContent.innerHTML = '<img src="/Images/NoMansLand/GeneralInfo.png" alt="Rules Image">';
                 break;
         }
     }
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add "Anterior" button
         const prevButton = document.createElement('a');
         prevButton.href = '#';
-        prevButton.textContent = 'Anterior';
+        prevButton.textContent = '⪻';
         prevButton.addEventListener('click', (event) => {
         event.preventDefault(); // Add this line
         const currentPage = page > 1 ? page - 1 : 1;
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add "Siguiente" button
         const nextButton = document.createElement('a');
         nextButton.href = '#';
-        nextButton.textContent = 'Siguiente';
+        nextButton.textContent = '⪼';
         nextButton.addEventListener('click', (event) => {
         event.preventDefault(); // Add this line
         const currentPage = page < totalPages ? page + 1 : totalPages;
@@ -104,10 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const start = (page - 1) * pageSize;
             const end = start + pageSize;
             const playersPage = players.slice(start, end);
-    
+            
             // Clear the player grid
             playerGrid.innerHTML = '';
-    
+            
             playersPage.forEach(player => {
                 const playerCard = `
                     <a href="https://twitch.tv/${player.twitch}" 
@@ -118,16 +118,15 @@ document.addEventListener('DOMContentLoaded', function() {
                             <img src="https://mc-heads.net/avatar/${player.username}" 
                                  alt="${player.username}'s avatar">
                             <h3 class="player-name">${player.username}</h3>
-                            <p class="player-quote">"${player.quote}"</p>
                         </div>
                     </a>
                 `;
                 playerGrid.innerHTML += playerCard;
             });
-    
+            
             prevButton.className = 'prev-button';
             nextButton.className = 'next-button';
-
+        
             tabContent.innerHTML = '';
             tabContent.appendChild(playerGrid);
         }

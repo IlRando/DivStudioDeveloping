@@ -1,48 +1,6 @@
 {
   "players": [
     {
-      "username": "RandoMike",
-      "quote": "¡Ponme putas, por favor!",
-      "twitch": "randomaik",
-      "status": "admin"
-    },
-    {
-      "username": "ElDivier",
-      "quote": "Me funan por todo",
-      "twitch": "eldivier",
-      "status": "admin"
-    },
-    {
-      "username": "ImHortense",
-      "quote": "Croissant",
-      "twitch": "eriphantomhive",
-      "status": "admin"
-    },
-    {
-      "username": "DonAndriuw",
-      "quote": "Me gusta Mau",
-      "twitch": "donandriuw",
-      "status": "alive"
-    },
-    {
-      "username": "Lord_M4",
-      "quote": "Puta",
-      "twitch": "lord_m4",
-      "status": "dead"
-    },
-    {
-      "username": "El_aguacateMC",
-      "quote": "Los asmáticos tienen asma",
-      "twitch": "mr_aguacate12",
-      "status": "dead"
-    },
-    {
-      "username": "SilveritoGM",
-      "quote": "Ya vamonos, ya llegó silver",
-      "twitch": "silveritogm",
-      "status": "dead"
-    },
-    {
       "username": "Rumalddo",
       "quote": "",
       "twitch": "rumalddo",
@@ -103,9 +61,9 @@
         "status": "alive"
     },
     {
-        "username": "Reibun",
+        "username": "|oski",
         "quote": "",
-        "twitch": "reibun",
+        "twitch": "",
         "status": "alive"
     },
     {
@@ -174,10 +132,256 @@
         "status": "alive"
     },
     {
-      "username": "craketVT",
-      "quote": "",
-      "twitch": "craket",
-      "status": "alive"
-  }
+        "username": "craketVT",
+        "quote": "",
+        "twitch": "craket",
+        "status": "alive"
+    },
+    {
+        "username": "UnbidSpark",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "SektorOficial",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "Whitechann",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "Javichaaaa",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "zeod_gamer",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "THEGAMER7VT",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "OnlyFreddyVT",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "AdalOkumura",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "DonFragueta",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "Winnkz",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "la_planta",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "FervanKnight",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "TrickVtuber",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "RogerMinemu",
+        "quote": "",
+        "twitch": "rogerminemu",
+        "status": "alive"
+    },
+    {
+        "username": "KeyAmiVT",
+        "quote": "",    
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "Mortex117",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "ZercobV",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "FunkyoEnma",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "Troya_29",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "Inso_lente",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "E-nanos",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "Mikami_Shiro",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "Yummis",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "JoseDani",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "NEXOzer98",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "JaimeChrono",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },    
+    {
+        "username": "Wolf_lex25",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "EllieSummoner",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "AlouetteNissha",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "Hyspex",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "CapturedkittyVT",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "Willyh777",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "12OBED",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "ReibunTTv",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "MeLlamanLuck",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "iLudanXIV",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "SimplyCrow",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "SuzuMX",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "iotarel",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "Mike767_",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    },
+    {
+        "username": "G0NTERSIT0",
+        "quote": "",
+        "twitch": "",
+        "status": "alive"
+    }
   ]
 } 

@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>DivStudios - No Man's Land</title>
     
     <link rel="stylesheet" href="/styles/no-mans-land.css" />
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="/styles/animate.min.css" />
     <link rel="stylesheet" href="/styles/bulma.min.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
     <link rel="icon" type="/image/png" href="/Images/Logo.png" />
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/tabs.js"></script>
   </head>
-  <body style="background-color: #02000f">
+  <body style="background-color: #1C0902">
     <!-- ~ ------------------- Navbar ------------------- -->
     <header class="navbar is-fixed-top animate__animated animate__fadeInDown">
       <div class="navbar-brand">
@@ -71,8 +73,7 @@
     <section class="hero is-halfheight">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title">No Man's Land</h1>
-          <p class="subtitle">El campo de batalla te espera</p>
+          <img src="/Images/NoMansLand/No-Mans-Land.png" alt="No Man's Land" style="max-width: 100%;">
         </div>
       </div>
     </section>
@@ -83,13 +84,13 @@
         <div class="tabs is-boxed is-centered">
           <ul>
             <li class="is-active"><a>Participantes</a></li>
+            <li><a>Información general</a></li>
             <li><a>Reglas</a></li>
             <li><a>Mods</a></li>
-            <li><a>Información general</a></li>
           </ul>
         </div>
         <div id="tabContent">
-          <!-- Content for each tab will go here -->
+          <!-- * Content for each tab will go here (This is on tabs.js) -->
         </div>
       </div>
     </section>

@@ -134,3 +134,7 @@ html::-webkit-scrollbar {
 #eventDetails {
   padding-left: 1rem;
 }
+
+.footer{
+  background-color: #00010c !important;
+}
