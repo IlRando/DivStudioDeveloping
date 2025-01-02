@@ -210,12 +210,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const end = start + pageSize;
             const playersPage = players.slice(start, end);
             
-            // Clear the player grid
-            playerGrid.innerHTML = '';
-            
+        // Clear the player grid
+        playerGrid.innerHTML = '';
+    
             playersPage.forEach(player => {
                 const playerCard = `
-                    <a href="${player.twitch ? `https://twitch.tv/${player.twitch}` : `https://www.youtube.com/${player.youtube}`}"
+                    <a href="${player.twitch ? `https://twitch.tv/${player.twitch}` : player.youtube ? `https://www.youtube.com/${player.youtube}` : 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}"
                        target="_blank"
                        class="player-card animate__animated animate__fadeInUp ${player.status}"
                        rel="noopener noreferrer">
