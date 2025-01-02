@@ -1,0 +1,110 @@
+[
+  {
+    "role": "CEO",
+    "name": "ElDivier",
+    "image": "/Images/Team/CEO.png",
+    "links": [
+      {
+        "url": "https://linktr.ee/eldivier",
+        "text": "ElDivier"
+      }
+    ]
+  },
+  {
+    "role": "Co-Owner",
+    "name": "Eri Phantomhive",
+    "image": "/Images/Team/CoOwner.png",
+    "links": [
+      {
+        "url": "https://eriphantomhive.carrd.co/",
+        "text": "Eri Phantomhive"
+      }
+    ]
+  },
+  {
+    "role": "Gerente general",
+    "name": "RandoMike",
+    "image": "/Images/Team/GG.png",
+    "links": [
+      {
+        "url": "https://randomike.netlify.app/",
+        "text": "RandoMike"
+      }
+    ]
+  },
+  {
+    "role": "Community Manager",
+    "name": "Don Andriuw",
+    "image": "/Images/Team/CM.png",
+    "links": [
+      {
+        "url": "https://linktr.ee/DonAndriuw",
+        "text": "Don Andriuw"
+      }
+    ]
+  },
+  {
+    "role": "Developer",
+    "name": "Civer_mau",
+    "image": "/Images/Team/Dev.png",
+    "links": [
+      {
+        "url": "https://civermau.dev/",
+        "text": "Civer_mau"
+      }
+    ]
+  },
+  {
+    "role": "Server manager",
+    "name": "Chitovader2000",
+    "image": "/Images/Team/Placeholder.png",
+    "links": [
+      {
+        "url": "https://www.twitch.tv/chitovader2000",
+        "text": "Chitovader2000"
+      },
+      {
+        "url": "https://linktr.ee/SilveritoGM",
+        "text": "SilveritoGM"
+      }
+    ]
+  },
+  {
+    "role": "Builder",
+    "name": "Dekugamer231",
+    "image": "/Images/Team/Builders.png",
+    "links": [
+      {
+        "url": "https://www.twitch.tv/dekugamer231",
+        "text": "Dekugamer231"
+      },
+      {
+        "url": "https://www.youtube.com/@juanpa579yt",
+        "text": "Juanpa579"
+      },
+      {
+        "url": "https://linktr.ee/lord_m4",
+        "text": "Lord M4"
+      }
+    ]
+  },
+  {
+    "role": "Diseñador",
+    "name": "El Aguacate",
+    "image": "/Images/Team/Designer.png",
+    "links": [
+      {
+        "url": "https://linktr.ee/El_aguacate",
+        "text": "El Aguacate"
+      },
+      {
+        "url": "https://vgen.co/chinche_xd",
+        "text": "Chinche_xd"
+      },
+      {
+        "url": "https://linktr.ee/ShantiMor",
+        "text": "ShantiMor"
+      }
+    ]
+  }
+] 

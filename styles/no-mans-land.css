@@ -14,9 +14,12 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
     text-decoration: none;
-    transition: transform 0.3s ease-in-out; /* this is mf doesn't want to work */
-}
-
+    transition: transform 0.3s ease-in-out;
+    animation: initial-animation 0.3s forwards, hover-animation 0.3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0.3s; /* delay hover animation until initial animation completes */
+  }
+  
 .player-card.dead {
     opacity: 0.5 !important;
     border-color: rgba(255, 0, 0, 0.4);
@@ -24,18 +27,6 @@
 
 .player-card.alive {
     border-color: rgba(0, 255, 0, 0.4);
-}
-
-.player-card:hover {
-    transform: translateY(-5px) !important;
-}
-
-.player-card.alive:hover {
-    border-color: rgba(0, 255, 0, 0.8);
-}
-
-.player-card.dead:hover {
-    border-color: rgba(255, 0, 0, 0.8);
 }
 
 .player-card img {
@@ -116,3 +107,16 @@
     background-color: #23527c;
     color: #fff;
   }
+
+  #mods-carousel {
+    max-width: 800px; /* adjust this value to your desired width */
+    margin: 0 auto;
+    overflow: hidden; /* add a horizontal scrollbar if the carousel items exceed the width of the carousel */
+    border-radius: 20px; /* add a 10px border radius to the carousel items */
+    height: 420px;
+  }
+
+  .carousel-item img {
+    border-radius: 20px; /* add a 10px border radius to the images */
+  }
+  

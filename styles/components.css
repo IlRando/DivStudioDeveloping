@@ -7,13 +7,17 @@
 }
 
 .card {
-  box-shadow: none !important;
+  background: linear-gradient(135deg, #001829, #0C0F11);
+  border: 1.5px solid #00253f;
+  box-shadow: #001d30 0px 3px 0px 0 !important;
 }
 
 .card-image {
   height: 14rem; /* Set the desired height */
   border-radius: 5% !important;
   object-fit: cover; /* Add this property */
+  background-color: #0c0f1171 !important;
+  border-right: 1.5px solid #00253f9f;
 }
 
 .is-info {
@@ -21,10 +25,13 @@
   border-color: #230050 !important;
 }
 
+/* todo: fix this shit colors */
+
 .button {
   margin: 0.25rem !important;
+  background: linear-gradient(135deg, #001e31, #0a001d); /* Example gradient from peach to light orange */
 }
-
+ 
 .button.is-link.is-outlined:hover {
   border-color: #ccc; /* change to your desired hover border color */
   transition: border-color 0.1s ease-in-out;
@@ -34,6 +41,14 @@
   border-color: #ccc; /* change to your desired hover border color */
   color: #fff; /* change to your desired hover text color */
   transition: border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.button.is-link.is-outlined {
+  width: 80%; /* Make the button take up more space */
+  margin: 0.5rem auto; /* Center the button and add some margin */
+  display: block; /* Ensure the button is a block element */
+  text-align: center; /* Center the text */
+  background-color: #001829 !important;
 }
 
 .event-item {

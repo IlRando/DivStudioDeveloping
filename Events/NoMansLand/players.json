@@ -1,13 +1,7 @@
 {
   "players": [
     {
-      "username": "Rumalddo",
-      "quote": "",
-      "twitch": "rumalddo",
-      "status": "alive"
-    },
-    {
-      "username": "MakasuVT",
+      "username": "NainBJ",
       "quote": "",
       "twitch": "makasuvt",
       "status": "alive"
@@ -15,7 +9,7 @@
     {
       "username": "WonkaElloco",
       "quote": "",
-      "twitch": "wonkaelloco",
+      "twitch": "vonkarmaelloco",
       "status": "alive"
     },
     {
@@ -25,33 +19,27 @@
       "status": "alive"
     },
     {
-      "username": "Santibuxi",
-      "quote": "",
-      "twitch": "santibuxi",
-      "status": "alive"
-    },
-    {
         "username": "Dani0ff",
-        "quote": "",
-        "twitch": "dani0ff",
+        "quote": "Me gustan las empanadas.",
+        "youtube": "@dani0ffice",
         "status": "alive"
     },
     {
         "username": "Tatsu_Star",
-        "quote": "",
+        "quote": "El honor brilla como las estrellas, guiando cada acción con lealtad y pasión.",
         "twitch": "tatsustars",
         "status": "alive"
     },
     {
         "username": "Arrotzy",
-        "quote": "",
+        "quote": "El honor es la brújula que guía al alma en tiempos de oscuridad.",
         "twitch": "arrotzy_",
         "status": "alive"
     },
     {
         "username": "Terroco",
         "quote": "",
-        "twitch": "terroco",
+        "twitch": "terrocoo",
         "status": "alive"
     },
     {
@@ -61,9 +49,9 @@
         "status": "alive"
     },
     {
-        "username": "|oski",
-        "quote": "",
-        "twitch": "",
+        "username": "shadowoski",
+        "quote": "¡El valor me guía, la victoria me espera, y nada podrá detenerme!",
+        "twitch": "shadowoski1",
         "status": "alive"
     },
     {
@@ -86,13 +74,13 @@
     },
     {
         "username": "LobitoVtuber",
-        "quote": "",
-        "twitch": "lobitovtuber",
+        "quote": "Pelearé contra todo lo que se interponga en mi camino.",
+        "twitch": "lobitovtprime",
         "status": "alive"
     },
     {
         "username": "FenrirXYZ",
-        "quote": "",
+        "quote": "El primero en el este y el primero en el oeste ha llegado.",
         "twitch": "fenrirxyz",
         "status": "alive"
     },
@@ -109,14 +97,14 @@
         "status": "alive"
     },
     {
-        "username": "Eltejonfeliz",
+        "username": "eltejonfeliz",
         "quote": "",
         "twitch": "eltejonfeliz",
         "status": "alive"
     },
     {
         "username": "SoyViz",
-        "quote": "",
+        "quote": "Las cosas pasan cuando pasan, no hay más.",
         "twitch": "soyviz",
         "status": "alive"
     },
@@ -128,91 +116,91 @@
     {
         "username": "Rainerwolf19",
         "quote": "",
-        "twitch": "rainerwolf19",
+        "twitch": "keinoruz",
         "status": "alive"
     },
     {
         "username": "craketVT",
-        "quote": "",
-        "twitch": "craket",
+        "quote": "La fuerza no viene de lo que logras, sino de lo que superas.",
+        "twitch": "craketvt",
         "status": "alive"
     },
     {
         "username": "UnbidSpark",
         "quote": "",
-        "twitch": "",
+        "twitch": "unbidspark",
         "status": "alive"
     },
     {
         "username": "SektorOficial",
         "quote": "",
-        "twitch": "",
+        "twitch": "sektoroficial",
         "status": "alive"
     },
     {
         "username": "Whitechann",
         "quote": "",
-        "twitch": "",
+        "twitch": "whitechan",
         "status": "alive"
     },
     {
         "username": "Javichaaaa",
         "quote": "",
-        "twitch": "",
+        "twitch": "javichaaa",
         "status": "alive"
     },
     {
         "username": "zeod_gamer",
         "quote": "",
-        "twitch": "",
+        "twitch": "zeod_gamer",
         "status": "alive"
     },
     {
         "username": "THEGAMER7VT",
         "quote": "",
-        "twitch": "",
+        "twitch": "tcrystal_vt",
         "status": "alive"
     },
     {
         "username": "OnlyFreddyVT",
         "quote": "",
-        "twitch": "",
+        "twitch": "onlyfreddyvt",
         "status": "alive"
     },
     {
         "username": "AdalOkumura",
         "quote": "",
-        "twitch": "",
+        "twitch": "adalokumura",
         "status": "alive"
     },
     {
         "username": "DonFragueta",
         "quote": "",
-        "twitch": "",
+        "twitch": "don_fragueta",
         "status": "alive"
     },
     {
         "username": "Winnkz",
         "quote": "",
-        "twitch": "",
+        "twitch": "winnkz",
         "status": "alive"
     },
     {
         "username": "la_planta",
         "quote": "",
-        "twitch": "",
+        "twitch": "laplantitaparlanchina",
         "status": "alive"
     },
     {
         "username": "FervanKnight",
         "quote": "",
-        "twitch": "",
+        "twitch": "fervanknight",
         "status": "alive"
     },
     {
         "username": "TrickVtuber",
         "quote": "",
-        "twitch": "",
+        "twitch": "trickvtuber",
         "status": "alive"
     },
     {
@@ -223,136 +211,142 @@
     },
     {
         "username": "KeyAmiVT",
-        "quote": "",    
-        "twitch": "",
+        "quote": "Chale, ya di todo de mi y apenas va iniciando la semana",
+        "twitch": "keyamivt",
         "status": "alive"
     },    
     {
         "username": "Mortex117",
-        "quote": "",
-        "twitch": "",
+        "quote": "El cementerio es para los valientes.",
+        "twitch": "mortexcutia",
         "status": "alive"
     },    
     {
         "username": "ZercobV",
         "quote": "",
-        "twitch": "",
+        "twitch": "zercobv",
         "status": "alive"
     },    
     {
         "username": "FunkyoEnma",
-        "quote": "",
-        "twitch": "",
+        "quote": "El que se mete con la gata, sale aruñado. Miaw.",
+        "twitch": "funkyoenma",
         "status": "alive"
     },    
     {
         "username": "Troya_29",
-        "quote": "",
-        "twitch": "",
+        "quote": "No, no, no, levántense",
+        "twitch": "troya_vt",
         "status": "alive"
     },    
     {
         "username": "Inso_lente",
         "quote": "",
-        "twitch": "",
+        "twitch": "insomniovt",
         "status": "alive"
     },    
     {
         "username": "E-nanos",
         "quote": "",
-        "twitch": "",
+        "twitch": "nanalabrujita",
         "status": "alive"
     },    
     {
         "username": "Mikami_Shiro",
         "quote": "",
-        "twitch": "",
+        "twitch": "mikami_shiro",
         "status": "alive"
     },    
     {
         "username": "Yummis",
         "quote": "",
-        "twitch": "",
+        "twitch": "yummisvt",
         "status": "alive"
     },    
     {
         "username": "JoseDani",
-        "quote": "",
-        "twitch": "",
+        "quote": "Toda buena historia merece ser escuchada...",
+        "twitch": "thejosedani",
         "status": "alive"
     },    
     {
         "username": "NEXOzer98",
         "quote": "",
-        "twitch": "",
+        "twitch": "nexozer",
         "status": "alive"
     },    
     {
         "username": "JaimeChrono",
-        "quote": "",
-        "twitch": "",
+        "quote": "El honor no se encuentra en el acto de luchar, sino en la causa por la que se lucha.",
+        "twitch": "jaimechrono",
         "status": "alive"
     },    
     {
         "username": "Wolf_lex25",
         "quote": "",
-        "twitch": "",
+        "twitch": "wolflex_45",
         "status": "alive"
     },
     {
         "username": "EllieSummoner",
         "quote": "",
-        "twitch": "",
+        "twitch": "elliesummoner",
         "status": "alive"
     },
     {
         "username": "AlouetteNissha",
-        "quote": "",
-        "twitch": "",
+        "quote": "Por Eywa y por Pandora, lucharé hasta el último aliento.",
+        "twitch": "alouettemoonvt",
         "status": "alive"
     },
     {
         "username": "Hyspex",
         "quote": "",
-        "twitch": "",
+        "twitch": "hyspex_",
         "status": "alive"
     },
     {
         "username": "CapturedkittyVT",
-        "quote": "",
-        "twitch": "",
+        "quote": "Que chingue su madre el América.",
+        "twitch": "capturedkittyvt",
         "status": "alive"
     },
     {
         "username": "Willyh777",
         "quote": "",
-        "twitch": "",
+        "twitch": "willyhh777",
         "status": "alive"
     },
     {
         "username": "12OBED",
-        "quote": "",
-        "twitch": "",
+        "quote": "Maté a un dúo. ¡Qué lindo! ¿Y cuánta vida me sacaron? Cero, cómo me gusta el pe-.",
+        "twitch": "12obed",
         "status": "alive"
     },
     {
         "username": "ReibunTTv",
-        "quote": "",
-        "twitch": "",
+        "quote": "Nunca más...",
+        "twitch": "reibun_n",
         "status": "alive"
     },
     {
         "username": "MeLlamanLuck",
-        "quote": "",
-        "twitch": "",
+        "quote": "La venganza es un juego de tontos.",
+        "twitch": "mellamanluck",
         "status": "alive"
     },
     {
         "username": "iLudanXIV",
         "quote": "",
-        "twitch": "",
+        "twitch": "ludangamerxiv",
         "status": "alive"
     },
+    {
+        "username": "Santibuxi",
+        "quote": "Estoy en todos lados, en todo momento, en todo lugar...",
+        "twitch": "santiibuxi",
+        "status": "alive"
+ },
     {
         "username": "SimplyCrow",
         "quote": "",
@@ -362,25 +356,187 @@
     {
         "username": "SuzuMX",
         "quote": "",
-        "twitch": "",
+        "twitch": "suzumx",
         "status": "alive"
     },
     {
         "username": "iotarel",
         "quote": "",
-        "twitch": "",
+        "twitch": "iotarel",
         "status": "alive"
     },
     {
         "username": "Mike767_",
-        "quote": "",
-        "twitch": "",
+        "quote": "Alguien que lucha de verdad, no sabe rendirse.",
+        "twitch": "mike767_",
         "status": "alive"
     },
     {
         "username": "G0NTERSIT0",
+        "quote": "Que otros escriban mi historia, pero yo escribo el final.",
+        "youtube": "@g0nter768",
+        "status": "alive"
+    },
+    {
+        "username": "Asgaret",
+        "quote": "Sin dolor, no hay gloria",
+        "twitch": "asgaret_",
+        "status": "alive"
+    },
+    {
+        "username": "PastorHD",
+        "quote": "Experto en todo, aprendiz en nada.",
+        "twitch": "pastor_hd",
+        "status": "alive"
+    },
+    {
+        "username": "KiKiKisumi",
         "quote": "",
-        "twitch": "",
+        "twitch": "kisumikoiki",
+        "status": "alive"
+    },
+    {
+        "username": "MaltinPolar",
+        "quote": "",
+        "twitch": "valhamm",
+        "status": "alive"
+    },
+    {
+        "username": "Webosmayo666",
+        "quote": "Me dicen el comal, ya que caliento a las gorditas",
+        "twitch": "mftyphon",
+        "status": "alive"
+    },
+    {
+        "username": "iotarel",
+        "quote": "",
+        "twitch": "iotarel",
+        "status": "alive"
+    },
+    {
+        "username": "Durk041",
+        "quote": "",
+        "twitch": "mrdurk041",
+        "status": "alive"
+    },
+    {
+        "username": "ikaros_uwu",
+        "quote": "",
+        "twitch": "ikaros_uwu",
+        "status": "alive"
+    },
+    {
+        "username": "iClaudxD",
+        "quote": "",
+        "twitch": "iclaudxd",
+        "status": "alive"
+    },
+    {
+        "username": "RayoYT_",
+        "quote": "",
+        "twitch": "RayoYTs",
+        "status": "alive"
+    },
+    {
+        "username": "NotCalletanoVT",
+        "quote": "",
+        "twitch": "NotCalletanoVT",
+        "status": "alive"
+    },
+    {
+        "username": "H4ruSui",
+        "quote": "",
+        "twitch": "h4rusui",
+        "status": "alive"
+    },
+    {
+        "username": "ElSora11",
+        "quote": "",
+        "twitch": "elsora11",
+        "status": "alive"
+    },
+    {
+        "username": "usagisaki",
+        "quote": "",
+        "twitch": "usagi_saki",
+        "status": "alive"
+    },
+    {
+        "username": "DanixVT",
+        "quote": "",
+        "twitch": "danixvt",
+        "status": "alive"
+    },
+    {
+        "username": "Vallejos26",
+        "quote": "",
+        "twitch": "vallejos_26",
+        "status": "alive"
+    },
+    {
+        "username": "BennySandia",
+        "quote": "",
+        "twitch": "bennysandia",
+        "status": "alive"
+    },
+    {
+        "username": "Just_Wastaken",
+        "quote": "",
+        "twitch": "just__wastaken",
+        "status": "alive"
+    },
+    {
+        "username": "Sharwis34",
+        "quote": "",
+        "twitch": "sharwis34",
+        "status": "alive"
+    },
+    {
+        "username": "miauVL",
+        "quote": "",
+        "twitch": "miauvl",
+        "status": "alive"
+    },
+    {
+        "username": "GeekellMC",
+        "quote": "",
+        "youtube": "@GeekellMC",
+        "status": "alive"
+    },
+    {
+        "username": "Elvorax",
+        "quote": "",
+        "twitch": "elvorax",
+        "status": "alive"
+    },
+    {
+        "username": "Jextroll96",
+        "quote": "",
+        "twitch": "jextroll96",
+        "status": "alive"
+    },
+    {
+        "username": "MrGuppy8",
+        "quote": "",
+        "twitch": "mr_guppy88",
+        "status": "alive"
+    },
+    {
+        "username": "nqwp",
+        "quote": "",
+        "twitch": "nqwp_live",
+        "status": "alive"
+    },
+    {
+        "username": "CodiciusCode",
+        "quote": "",
+        "twitch": "codiciuscode",
+        "status": "alive"
+    },
+    {
+        "username": "Rumalddo",
+        "quote": "No importa qué suceda, seguiré intentándolo.",
+        "twitch": "rumalddovt",
         "status": "alive"
     }
   ]
