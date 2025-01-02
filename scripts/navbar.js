@@ -50,3 +50,4 @@ window.addEventListener('hashchange', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   });
+  

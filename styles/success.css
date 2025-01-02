@@ -1,0 +1,10 @@
+.hero-body h1 {
+    font-size: 85px;
+    color: #d7e0f8;
+  }
+  
+  .hero-body p {
+    font-size: 30px;
+    color: #ffffff;
+    font-style: italic;
+  }

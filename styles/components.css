@@ -27,20 +27,20 @@
 
 /* todo: fix this shit colors */
 
-.button {
+#Team .button {
   margin: 0.25rem !important;
-  background: linear-gradient(135deg, #001e31, #0a001d); /* Example gradient from peach to light orange */
-}
- 
-.button.is-link.is-outlined:hover {
-  border-color: #ccc; /* change to your desired hover border color */
-  transition: border-color 0.1s ease-in-out;
+  background: linear-gradient(135deg, #191714, #130F40); /* Example gradient from peach to light orange */
 }
 
-.button.is-link.is-outlined:hover {
-  border-color: #ccc; /* change to your desired hover border color */
+.button.is-outlined {
+  border-color: #5eb2fc !important;
+  color: #dad8d8 !important;
+}
+
+.button.is-outlined:hover {
+  border-color: #ccc !important; /* change to your desired hover border color */
   color: #fff; /* change to your desired hover text color */
-  transition: border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  transition: border-color 0.25s ease-in-out, color 0.1s ease-in-out;
 }
 
 .button.is-link.is-outlined {
@@ -118,4 +118,18 @@
   font-weight: normal;
   margin-bottom: 10px;
   text-align: justify;
+}
+
+.description-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }

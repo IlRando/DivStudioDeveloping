@@ -1,10 +1,12 @@
 .navbar {
-  background-color: #00010c !important;
+  background-color: rgba(0, 1, 12, 0.5) !important;
 }
 
-.navbar-menu {
-  background-color: #00010ce7 !important;
-  text-align: center;
+@media (max-width: 768px) {
+  .navbar-menu {
+    background-color: rgba(0, 1, 12, 0.5) !important;
+    text-align: center;
+  }
 }
 
 .navbar-menu.is-active {

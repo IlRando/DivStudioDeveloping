@@ -10,16 +10,6 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-#Welcome {
-  margin-top: 45px;
-  margin-bottom: -75px;
-}
-
-.WelcomeSub span {
-  opacity: 0;
-  display: inline-block;
-}
-
 #Team .hero-body {
   padding-top: calc(82px) !important; /* adjust to the height of your top navbar */
   padding-bottom: calc(1000px) !important; /* adjust to the height of your footer */
@@ -27,6 +17,8 @@ html::-webkit-scrollbar {
 
 .spacer {
   height: 500px; /* adjust to the desired space between sections */
+  background-image: url('/Images/Spacer.jpg');
+  background-position: center;
 }
 
 .policy-title {
@@ -43,6 +35,44 @@ html::-webkit-scrollbar {
   margin-top: -22.5px;
   margin-bottom: 35px;
   margin-left: 75px;
+}
+
+/* Index Page Styles */
+
+#Welcome {
+  background-image: url('/Images/Welcome.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#AboutUs {
+  background-image: url('/Images/AboutUSBG.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+#Team {
+  background-image: url('/Images/TeamBG.jpg');
+  background-position: center;
+}
+
+#Contact {
+  background-image: url('/Images/Contact.jpg');
+  background-position: center;
+}
+
+/* Events Page Styles */
+
+#WelcomeEvent {
+  background-image: url('/Images/MainEv.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#EventsSummary {
+  background-image: url('/Images/EventsBG.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .footer{
