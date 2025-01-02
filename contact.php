@@ -5,11 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "<script>alert('Invalid email format.'); window.history.back();</script>";
+        echo "<script>alert('Formato de correo inválido.'); window.history.back();</script>";
         exit;
     }
 
-    $to = "contact@divstudio.com";
+    $to = "contact@divstudio.net";
     $subject = "New message from $name";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -21,10 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Message:\n$message";
 
     if (mail($to, $subject, $email_body, $headers)) {
-        echo "<script>alert('Message sent successfully!'); window.location.href = 'success.html';</script>";
+        echo "<script>alert('¡Tu mensaje fue enviado con éxito!'); window.location.href = 'success.html';</script>";
     } else {
         // Log the error for debugging (omitted for brevity)
-        echo "<script>alert('Message could not be sent. Please try again later.'); window.history.back();</script>"; 
+        echo "<script>alert('No se pudo enviar tu mensaje. Inténtalo nuevamente.'); window.history.back();</script>"; 
     }
 }
 ?>
