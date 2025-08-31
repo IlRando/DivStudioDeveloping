@@ -25,12 +25,8 @@
 
     <title>DivStudio - Eventos de Minecraft</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/media-queries.css" />
-    <link rel="stylesheet" href="/styles/bulma.min.css" />
-    <link rel="stylesheet" href="/styles/animate.min.css" />
-    <link rel="stylesheet" href="/styles/components.css" />
 
     <link rel="icon" type="/image/png" href="/Images/Logo.png" />
     <script src="/scripts/navbar.js"></script>
@@ -38,61 +34,80 @@
   </head>
   <body style="background-color: #02000f">
     <!-- ~ ------------------- Navbar ------------------- -->
-    <header class="navbar is-fixed-top animate__animated animate__fadeInDown">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#Welcome">
+    <header class="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-between items-center">
+      <div class="flex-shrink-0">
+        <a href="#Welcome">
           <img
             src="/Images/LogoLong.png"
             alt="Logo"
             style="max-height: 4rem"
-            class="is-hidden-tablet"
+            class="md:hidden"
             onclick="closeNavbar()"
           />
           <img
-            class="is-hidden-mobile"
+            class="hidden md:block"
             src="/Images/Logo.png"
             alt="Logo"
             style="max-height: 5rem"
             onclick="closeNavbar()"
           />
         </a>
-        <!-- Burger icon -->
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
+      </div>
+
+      <!-- Burger icon -->
+      <div class="md:hidden">
+        <button
+          class="text-white hover:text-gray-300 focus:outline-none"
           onclick="toggleNavbar()"
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
       </div>
 
       <!-- * ------------------- Navbar Menu ------------------- -->
-      <div class="navbar-menu" id="navbarMenu">
-        <div class="navbar-start" style="font-size: 1.2rem">
-          <a class="navbar-item" href="#AboutUs" onclick="toggleNavbar()"
+      <div class="hidden md:flex md:items-center" id="navbarMenu">
+        <div class="flex items-center text-lg">
+          <a
+            href="#AboutUs"
+            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+            onclick="toggleNavbar()"
             >Sobre nosotros</a
           >
-          <a class="navbar-item" href="#Team" onclick="toggleNavbar()"
+          <a
+            href="#Team"
+            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+            onclick="toggleNavbar()"
             >Equipo</a
           >
-          <a class="navbar-item" href="#Contact" onclick="toggleNavbar()"
+          <a
+            href="#Contact"
+            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+            onclick="toggleNavbar()"
             >Contacto</a
           >
-          <a class="navbar-item" href="/Events" onclick="toggleNavbar()"
+          <a
+            href="/Events"
+            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+            onclick="toggleNavbar()"
             >Eventos</a
           >
         </div>
-        <div
-          class="navbar-end"
-          style="display: flex; align-items: center; height: 100%"
-        >
+        <div class="hidden md:flex md:items-center ml-4">
           <a
-            class="button is-warning mr-3 is-hidden-touch"
+            class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
             href="https://x.com/DivStudioO/"
             target="_blank"
             >Siguenos en Twitter!</a
@@ -102,16 +117,16 @@
     </header>
 
     <!-- ~ ------------------- Welcome ------------------- -->
-    <section class="hero is-fullheight" id="Welcome">
-      <div class="hero-body">
-        <div class="container has-text-centered">
+    <section class="min-h-screen flex items-center justify-center" id="Welcome">
+      <div class="text-center">
+        <div class="container mx-auto px-4">
           <h1
-            class="title animate__animated animate__fadeInDown is-size-1-mobile"
+            class="text-5xl font-bold text-white"
             style="font-size: 4rem"
           >
             Bienvenido a DivStudios
           </h1>
-          <p class="subtitle WelcomeSub" id="subtitles">
+          <p class="text-xl text-gray-300 mt-4 WelcomeSub" id="subtitles">
             <span>T</span><span>u</span> <span>p</span><span>u</span
             ><span>e</span><span>r</span><span>t</span><span>a</span>
             <span>d</span><span>e</span> <span>e</span><span>n</span
@@ -137,12 +152,12 @@
             ><span>o</span><span>s</span><span>o</span><span>t</span
             ><span>r</span><span>o</span><span>s</span><span>!</span>
           </p>
-          <div class="buttons is-centered animate__animated animate__fadeInUp">
-            <a class="button is-outlined is-rounded py-3" href="/Events"
+          <div class="mt-8 flex justify-center space-x-4">
+            <a class="border border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-gray-800" href="/Events"
               >Explora nuestros eventos!</a
             >
             <a
-              class="button is-outlined is-rounded py-3"
+              class="border border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-gray-800"
               href="https://x.com/DivStudioO/"
               target="_blank"
               >Siguenos en Twitter!</a
@@ -154,13 +169,13 @@
 
     <div class="spacer"></div>
     <!-- ~ ------------------- About us ------------------- -->
-    <section class="hero is-fullheight" id="AboutUs">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-size-1-mobile" style="font-size: 4rem">
+    <section class="min-h-screen flex items-center justify-center" id="AboutUs">
+      <div class="text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-5xl font-bold text-white" style="font-size: 4rem">
             Sobre nosotros
           </h1>
-          <p class="subtitle">
+          <p class="text-xl text-gray-300 mt-4">
             Bienvenidos a DivStudio, desarrolladores e impulsadores de eventos
             de Minecraft!
             <br />
@@ -174,13 +189,13 @@
 
     <div class="spacer"></div>
     <!-- ~ ------------------- Team ------------------- -->
-    <section class="hero is-fullheight" id="Team">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-size-1-mobile" style="font-size: 4rem">Equipo</h1>
+    <section class="min-h-screen flex items-center justify-center" id="Team">
+      <div class="text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-5xl font-bold text-white" style="font-size: 4rem">Equipo</h1>
           <div class="spacer" style="height: 0px !important;"></div>
-          <p class="subtitle">Conoce al staff detrás de esto.</p>
-          <div class="columns is-multiline is-centered">
+          <p class="text-xl text-gray-300 mt-4">Conoce al staff detrás de esto.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             <!-- Include the JavaScript file -->
             <script src="/scripts/loadTeam.js"></script>
           </div>
@@ -190,59 +205,49 @@
 
     <div class="spacer"></div>
     <!-- ~ ------------------- Contact ------------------- -->
-    <section class="hero is-fullheight" id="Contact">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-size-1-mobile" style="font-size: 4rem">
+    <section class="min-h-screen flex items-center justify-center" id="Contact">
+      <div class="text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-5xl font-bold text-white" style="font-size: 4rem">
             Contacto
           </h1>
-          <p class="subtitle">
+          <p class="text-xl text-gray-300 mt-4">
             Contáctanos para cualquier duda, sugerencia o colaboración.
           </p>
-          <form name="contact" method="POST" action="contact.php">
-            <div class="columns">
-              <div class="column">
-                <div class="field">
-                  <label class="label">Nombre</label>
-                  <div class="control">
-                    <input
-                      class="input is-info"
-                      type="text"
-                      name="name"
-                      placeholder="Tu nombre"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="field">
-                  <label class="label">Email</label>
-                  <div class="control">
-                    <input
-                      class="input is-info"
-                      type="email"
-                      name="email"
-                      placeholder="Tu email"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Mensaje</label>
-              <div class="control">
-                <textarea
-                  class="textarea is-info"
-                  name="message"
-                  placeholder="Escribe tu mensaje aqui"
+          <form name="contact" method="POST" action="contact.php" class="mt-8">
+            <div class="md:flex md:space-x-4">
+              <div class="w-full mb-4">
+                <label class="block text-white text-sm font-bold mb-2" for="name">Nombre</label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  type="text"
+                  name="name"
+                  placeholder="Tu nombre"
                   required
-                ></textarea>
+                />
+              </div>
+              <div class="w-full mb-4">
+                <label class="block text-white text-sm font-bold mb-2" for="email">Email</label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  type="email"
+                  name="email"
+                  placeholder="Tu email"
+                  required
+                />
               </div>
             </div>
-            <div class="control">
-              <button class="button is-outlined" type="submit">Enviar</button>
+            <div class="mb-4">
+              <label class="block text-white text-sm font-bold mb-2" for="message">Mensaje</label>
+              <textarea
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                name="message"
+                placeholder="Escribe tu mensaje aqui"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button class="border border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-gray-800" type="submit">Enviar</button>
             </div>
           </form>
         </div>
@@ -250,11 +255,11 @@
     </section>
 
     <!-- ~ ------------------- Footer ------------------- -->
-    <footer class="footer pb-6">
-      <div class="content has-text-centered">
+    <footer class="bg-gray-800 text-white p-4 text-center">
+      <div class="container mx-auto">
         <p>
-          <strong>DivStudios</strong> © 2025. Todos los derechos reservados. |
-          <a href="/Privacy">Politica de privacidad</a> |
+          <span class="font-bold">DivStudios</span> © 2025. Todos los derechos reservados. |
+          <a href="/Privacy" class="hover:text-gray-300">Politica de privacidad</a> |
         </p>
       </div>
     </footer>
