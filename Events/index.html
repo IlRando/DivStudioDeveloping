@@ -4,86 +4,96 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DivStudios - Eventos</title>
-    
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/media-queries.css" />
-    <link rel="stylesheet" href="/styles/components.css" />
-    <link rel="stylesheet" href="/styles/bulma.min.css" />
-    <link rel="stylesheet" href="/styles/animate.min.css" />
-    
+    <link rel="stylesheet" href="/styles/custom.css" />
+    <style>
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #02000f;
+        z-index: -1;
+      }
+      .navbar-custom-bg {
+        background-color: rgba(0, 1, 12, 0.5);
+      }
+      .footer-custom-bg {
+        background-color: #00010c;
+      }
+    </style>
+
     <link rel="icon" type="/image/png" href="/Images/Logo.png" />
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/eventDetails.js"></script>
 
   </head>
-  <body style="background-color: #02000f">
+  <body>
+    <div id="particles-js"></div>
     <!-- ~ ------------------- Navbar ------------------- -->
-    <header class="navbar is-fixed-top animate__animated animate__fadeInDown">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img
-            src="/Images/LogoLong.png"
-            alt="Logo"
-            style="max-height: 4rem"
-            class="is-hidden-tablet"
-            onclick="closeNavbar()"
-          />
-          <img
-            class="is-hidden-mobile"
-            src="/Images/Logo.png"
-            alt="Logo"
-            style="max-height: 5rem"
-            onclick="closeNavbar()"
-          />
-        </a>
-        
-        <!-- Burger icon -->
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          onclick="toggleNavbar()"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+    <header class="fixed top-0 left-0 w-full z-10 navbar-custom-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a href="/">
+                <img
+                  src="/Images/LogoLong.png"
+                  alt="Logo"
+                  style="max-height: 4rem"
+                  class="sm:hidden"
+                />
+                <img
+                  class="hidden sm:block"
+                  src="/Images/Logo.png"
+                  alt="Logo"
+                  style="max-height: 5rem"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hidden sm:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#WelcomeEvent" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+              <a href="#EventsSummary" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Eventos</a>
+              <a href="https://x.com/DivStudioO/" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">Siguenos en Twitter!</a>
+            </div>
+          </div>
+          <div class="-mr-2 flex sm:hidden">
+            <button onclick="toggleNavbar()" type="button" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- * ------------------- Navbar Menu ------------------- -->
-      <div class="navbar-menu" id="navbarMenu">
-        <div class="navbar-start" style="font-size: 1.2rem">
-          <a class="navbar-item" href="#WelcomeEvent" onclick="toggleNavbar()">Inicio</a>
-          <a class="navbar-item" href="#EventsSummary" onclick="toggleNavbar()">Eventos</a>
-        </div>
-        <div
-          class="navbar-end"
-          style="display: flex; align-items: center; height: 100%"
-        >
-          <a
-            class="button is-warning mr-3 is-hidden-touch"
-            href="https://x.com/DivStudioO/"
-            target="_blank"
-            >Siguenos en Twitter!</a
-          >
+      <div class="sm:hidden" id="navbarMenu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#WelcomeEvent" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+          <a href="#EventsSummary" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Eventos</a>
+          <a href="https://x.com/DivStudioO/" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Siguenos en Twitter!</a>
         </div>
       </div>
     </header>
 
     <!-- ~ ------------------- Welcome ------------------- -->
-    <section class="hero is-fullheight animate__animated animate__fadeInDown" id="WelcomeEvent">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">¡Nuestros eventos!</h1>
-          <p class="subtitle">
+    <section class="min-h-screen flex items-center justify-center bg-transparent" id="WelcomeEvent">
+      <div class="text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-5xl font-bold text-white">¡Nuestros eventos!</h1>
+          <p class="text-xl text-gray-300 mt-4">
             ¡Explora eventos pasados de los que hemos participado, y eventos
             futuros que tenemos preparados!
           </p>
-          <div class="buttons is-centered animate__animated animate__fadeInUp">
-            <a class="button is-outlined is-rounded py-3" href="/#Contact"
+          <div class="mt-8">
+            <a class="border-2 border-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 hover:text-black transition-all duration-300 btn-glow" href="/#Contact"
               >Crea tu propio evento</a
             >
           </div>
@@ -92,35 +102,33 @@
     </section>
 
     <!-- ~ ------------------- Events summary ------------------- -->
-    <section class="hero is-fullheight animate__animated animate__fadeInDown" id="EventsSummary">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <!-- Left Column: Event List -->
-            <div class="column is-one-fifth" id="eventList" style="border-right: 1px solid #fff;">
-              <div class="event-item" onclick="showEventDetails('event1')">
-                <img src="/Images/Events/Event1.png" alt="Event 1" />
-                <div>
-                  <h2>No man's land</h2>
-                  <p>¿Podrás ser el último soldado en pie?</p>
-                </div>
+    <section class="min-h-screen flex items-center justify-center bg-transparent" id="EventsSummary">
+      <div class="container mx-auto px-4">
+        <div class="flex">
+          <!-- Left Column: Event List -->
+          <div class="w-1/5" id="eventList" style="border-right: 1px solid #fff;">
+            <div class="event-item p-4 cursor-pointer border-b border-gray-700" onclick="showEventDetails('event1')">
+              <img src="/Images/Events/Event1.png" alt="Event 1" class="w-12 h-12 mr-4" />
+              <div>
+                <h2 class="font-bold text-white">No man's land</h2>
+                <p class="text-gray-400">¿Podrás ser el último soldado en pie?</p>
               </div>
-              <div class="event-item" onclick="showEventDetails('event2')">
-                <img src="/Images/Events/Event2.png" alt="Event 2" />
-                <div>
-                  <h2>Eventos futuros</h2>
-                  <p>Un interesante futuro espera...</p>
-                </div>
-              </div>
-              <!-- Add more events as needed -->
             </div>
-
-            <!-- Right Column: Event Details -->
-            <div class="column" id="eventDetails">
-              <h1 class="title">Haz clic para ver más detalles</h1>
-              <div id="eventContent">
-                <!-- Event details will be dynamically inserted here -->
+            <div class="event-item p-4 cursor-pointer" onclick="showEventDetails('event2')">
+              <img src="/Images/Events/Event2.png" alt="Event 2" class="w-12 h-12 mr-4" />
+              <div>
+                <h2 class="font-bold text-white">Eventos futuros</h2>
+                <p class="text-gray-400">Un interesante futuro espera...</p>
               </div>
+            </div>
+            <!-- Add more events as needed -->
+          </div>
+
+          <!-- Right Column: Event Details -->
+          <div class="w-4/5 pl-8" id="eventDetails">
+            <h1 class="text-4xl font-bold text-white">Haz clic para ver más detalles</h1>
+            <div id="eventContent">
+              <!-- Event details will be dynamically inserted here -->
             </div>
           </div>
         </div>
@@ -128,13 +136,121 @@
     </section>
 
     <!-- ~ ------------------- Footer ------------------- -->
-    <footer class="footer pb-6">
-      <div class="content has-text-centered">
+    <footer class="text-white p-4 text-center footer-custom-bg">
+      <div class="container mx-auto">
         <p>
-          <strong>DivStudios</strong> © 2025. Todos los derechos reservados. |
-          <a href="/Privacy">Política de privacidad</a>
+          <span class="font-bold">DivStudios</span> © 2025. Todos los derechos reservados. |
+          <a href="/Privacy" class="hover:text-gray-300">Política de privacidad</a>
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
   </body>
 </html>

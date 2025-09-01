@@ -11,7 +11,7 @@
     <meta property="og:title" content="DivStudio" />
     <meta property="og:description" content="DivStudio - creating amazing events" />
     <meta property="og:url" content="https://divstudio.net/" />
-    <meta property="og:image" content="https://divstudio.net/Images/Page-Image.png" />   
+    <meta property="og:image" content="https://divstudio.net/Images/Page-Image.png" />
     <meta property="og:site_name" content="DivStudio" />
     <meta property="og:type" content="website" />
 
@@ -27,91 +27,87 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/custom.css" />
+    <style>
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #02000f;
+        z-index: -1;
+      }
+      .navbar-custom-bg {
+        background-color: rgba(0, 1, 12, 0.5);
+      }
+      .footer-custom-bg {
+        background-color: #00010c;
+      }
+      .btn-glow:hover {
+        box-shadow: 0 0 10px #2563eb, 0 0 20px #2563eb, 0 0 30px #2563eb;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    </style>
 
     <link rel="icon" type="/image/png" href="/Images/Logo.png" />
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/animations.js"></script>
   </head>
-  <body style="background-color: #02000f">
+  <body>
+    <div id="particles-js"></div>
     <!-- ~ ------------------- Navbar ------------------- -->
-    <header class="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-between items-center">
-      <div class="flex-shrink-0">
-        <a href="#Welcome">
-          <img
-            src="/Images/LogoLong.png"
-            alt="Logo"
-            style="max-height: 4rem"
-            class="md:hidden"
-            onclick="closeNavbar()"
-          />
-          <img
-            class="hidden md:block"
-            src="/Images/Logo.png"
-            alt="Logo"
-            style="max-height: 5rem"
-            onclick="closeNavbar()"
-          />
-        </a>
-      </div>
-
-      <!-- Burger icon -->
-      <div class="md:hidden">
-        <button
-          class="text-white hover:text-gray-300 focus:outline-none"
-          onclick="toggleNavbar()"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- * ------------------- Navbar Menu ------------------- -->
-      <div class="hidden md:flex md:items-center" id="navbarMenu">
-        <div class="flex items-center text-lg">
-          <a
-            href="#AboutUs"
-            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-            onclick="toggleNavbar()"
-            >Sobre nosotros</a
-          >
-          <a
-            href="#Team"
-            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-            onclick="toggleNavbar()"
-            >Equipo</a
-          >
-          <a
-            href="#Contact"
-            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-            onclick="toggleNavbar()"
-            >Contacto</a
-          >
-          <a
-            href="/Events"
-            class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-            onclick="toggleNavbar()"
-            >Eventos</a
-          >
+    <header class="fixed top-0 left-0 w-full z-10 navbar-custom-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a href="#Welcome">
+                <img
+                  src="/Images/LogoLong.png"
+                  alt="Logo"
+                  style="max-height: 4rem"
+                  class="sm:hidden"
+                />
+                <img
+                  class="hidden sm:block"
+                  src="/Images/Logo.png"
+                  alt="Logo"
+                  style="max-height: 5rem"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hidden sm:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#AboutUs" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Sobre nosotros</a>
+              <a href="#Team" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Equipo</a>
+              <a href="#Contact" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+              <a href="/Events" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Eventos</a>
+              <a href="https://x.com/DivStudioO/" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">Siguenos en Twitter!</a>
+            </div>
+          </div>
+          <div class="-mr-2 flex sm:hidden">
+            <button onclick="toggleNavbar()" type="button" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="hidden md:flex md:items-center ml-4">
-          <a
-            class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
-            href="https://x.com/DivStudioO/"
-            target="_blank"
-            >Siguenos en Twitter!</a
-          >
+      </div>
+
+      <div class="sm:hidden" id="navbarMenu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#AboutUs" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sobre nosotros</a>
+          <a href="#Team" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Equipo</a>
+          <a href="#Contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+          <a href="/Events" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Eventos</a>
+          <a href="https://x.com/DivStudioO/" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Siguenos en Twitter!</a>
         </div>
       </div>
     </header>
@@ -126,7 +122,7 @@
           >
             Bienvenido a DivStudios
           </h1>
-          <p class="text-xl text-gray-300 mt-4 WelcomeSub" id="subtitles">
+          <p class="text-xl text-gray-300 mt-4 WelcomeSub text-shadow" id="subtitles">
             <span>T</span><span>u</span> <span>p</span><span>u</span
             ><span>e</span><span>r</span><span>t</span><span>a</span>
             <span>d</span><span>e</span> <span>e</span><span>n</span
@@ -153,11 +149,11 @@
             ><span>r</span><span>o</span><span>s</span><span>!</span>
           </p>
           <div class="mt-8 flex justify-center space-x-4">
-            <a class="border border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-gray-800" href="/Events"
+            <a class="border-2 border-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 hover:text-black transition-all duration-300 btn-glow" href="/Events"
               >Explora nuestros eventos!</a
             >
             <a
-              class="border border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-gray-800"
+              class="border-2 border-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 hover:text-black transition-all duration-300 btn-glow"
               href="https://x.com/DivStudioO/"
               target="_blank"
               >Siguenos en Twitter!</a
@@ -167,9 +163,8 @@
       </div>
     </section>
 
-    <div class="spacer"></div>
     <!-- ~ ------------------- About us ------------------- -->
-    <section class="min-h-screen flex items-center justify-center" id="AboutUs">
+    <section class="min-h-screen flex items-center justify-center bg-transparent" id="AboutUs">
       <div class="text-center">
         <div class="container mx-auto px-4">
           <h1 class="text-5xl font-bold text-white" style="font-size: 4rem">
@@ -187,15 +182,14 @@
       </div>
     </section>
 
-    <div class="spacer"></div>
     <!-- ~ ------------------- Team ------------------- -->
-    <section class="min-h-screen flex items-center justify-center" id="Team">
+    <section class="min-h-screen flex items-center justify-center bg-transparent" id="Team">
       <div class="text-center">
         <div class="container mx-auto px-4">
           <h1 class="text-5xl font-bold text-white" style="font-size: 4rem">Equipo</h1>
           <div class="spacer" style="height: 0px !important;"></div>
           <p class="text-xl text-gray-300 mt-4">Conoce al staff detrás de esto.</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
             <!-- Include the JavaScript file -->
             <script src="/scripts/loadTeam.js"></script>
           </div>
@@ -203,9 +197,8 @@
       </div>
     </section>
 
-    <div class="spacer"></div>
     <!-- ~ ------------------- Contact ------------------- -->
-    <section class="min-h-screen flex items-center justify-center" id="Contact">
+    <section class="min-h-screen flex items-center justify-center bg-transparent" id="Contact">
       <div class="text-center">
         <div class="container mx-auto px-4">
           <h1 class="text-5xl font-bold text-white" style="font-size: 4rem">
@@ -214,22 +207,22 @@
           <p class="text-xl text-gray-300 mt-4">
             Contáctanos para cualquier duda, sugerencia o colaboración.
           </p>
-          <form name="contact" method="POST" action="contact.php" class="mt-8">
+          <form name="contact" method="POST" action="contact.php" class="mt-8 max-w-xl mx-auto">
             <div class="md:flex md:space-x-4">
-              <div class="w-full mb-4">
+              <div class="w-full mb-4 text-left">
                 <label class="block text-white text-sm font-bold mb-2" for="name">Nombre</label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class="bg-gray-800 border border-gray-700 rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                   type="text"
                   name="name"
                   placeholder="Tu nombre"
                   required
                 />
               </div>
-              <div class="w-full mb-4">
+              <div class="w-full mb-4 text-left">
                 <label class="block text-white text-sm font-bold mb-2" for="email">Email</label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class="bg-gray-800 border border-gray-700 rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                   type="email"
                   name="email"
                   placeholder="Tu email"
@@ -237,17 +230,17 @@
                 />
               </div>
             </div>
-            <div class="mb-4">
+            <div class="mb-4 text-left">
               <label class="block text-white text-sm font-bold mb-2" for="message">Mensaje</label>
               <textarea
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                class="bg-gray-800 border border-gray-700 rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 name="message"
                 placeholder="Escribe tu mensaje aqui"
                 required
               ></textarea>
             </div>
             <div>
-              <button class="border border-white text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-gray-800" type="submit">Enviar</button>
+              <button class="border-2 border-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 hover:text-black transition-all duration-300 btn-glow" type="submit">Enviar</button>
             </div>
           </form>
         </div>
@@ -255,7 +248,7 @@
     </section>
 
     <!-- ~ ------------------- Footer ------------------- -->
-    <footer class="bg-gray-800 text-white p-4 text-center">
+    <footer class="text-white p-4 text-center footer-custom-bg">
       <div class="container mx-auto">
         <p>
           <span class="font-bold">DivStudios</span> © 2025. Todos los derechos reservados. |
@@ -263,5 +256,113 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
   </body>
 </html>

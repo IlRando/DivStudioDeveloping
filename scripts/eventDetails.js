@@ -13,12 +13,12 @@ function showEventDetails(eventId) {
         const event = events[eventId];
         if (event) {
           eventContent.innerHTML = `
-            <div class="event-details">
-              <img src="${event.image}" alt="${event.title}" />
-              <div>
-                <h1 class="event-details-title">${event.title}</h1>
-                <p class="event-details-description">${event.description}</p>
-                <a href="${event.link}" class="button is-outlined">Más información</a>
+            <div class="flex items-start">
+              <img src="${event.image}" alt="${event.title}" class="w-1/3" />
+              <div class="pl-8">
+                <h1 class="text-4xl font-bold text-white mb-4">${event.title}</h1>
+                <p class="text-white mb-4">${event.description}</p>
+                <a href="${event.link}" class="border-2 border-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 hover:text-black transition-all duration-300 btn-glow">Más información</a>
               </div>
             </div>
           `;

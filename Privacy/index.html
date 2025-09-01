@@ -5,82 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Políticas de privacidad de DivStudios</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/media-queries.css" />
-    <link rel="stylesheet" href="/styles/components.css" />
-    <link rel="stylesheet" href="/styles/bulma.min.css" />
-    <link rel="stylesheet" href="/styles/animate.min.css" />
+    <link rel="stylesheet" href="/styles/custom.css" />
+    <style>
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #02000f;
+        z-index: -1;
+      }
+      .navbar-custom-bg {
+        background-color: rgba(0, 1, 12, 0.5);
+      }
+      .footer-custom-bg {
+        background-color: #00010c;
+      }
+    </style>
 
     <link rel="icon" type="/image/png" href="/Images/Logo.png" />
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/animations.js"></script>
   </head>
-  <body style="background-color: #02000f">
+  <body>
+    <div id="particles-js"></div>
     <!-- ~ ------------------- Navbar ------------------- -->
-    <header class="navbar is-fixed-top animate__animated animate__fadeInDown">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img
-            src="/Images/LogoLong.png"
-            alt="Logo"
-            style="max-height: 4rem"
-            class="is-hidden-tablet"
-            onclick="closeNavbar()"
-          />
-          <img
-            class="is-hidden-mobile"
-            src="/Images/Logo.png"
-            alt="Logo"
-            style="max-height: 5rem"
-            onclick="closeNavbar()"
-          />
-        </a>
-        <!-- Burger icon -->
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          onclick="toggleNavbar()"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+    <header class="fixed top-0 left-0 w-full z-10 navbar-custom-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a href="/">
+                <img
+                  src="/Images/LogoLong.png"
+                  alt="Logo"
+                  style="max-height: 4rem"
+                  class="sm:hidden"
+                />
+                <img
+                  class="hidden sm:block"
+                  src="/Images/Logo.png"
+                  alt="Logo"
+                  style="max-height: 5rem"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hidden sm:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#PrivacyPolicyContent" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Política</a>
+              <a href="#Contact" class="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+              <a href="https://x.com/DivStudioO/" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">Siguenos en Twitter!</a>
+            </div>
+          </div>
+          <div class="-mr-2 flex sm:hidden">
+            <button onclick="toggleNavbar()" type="button" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- * ------------------- Navbar Menu ------------------- -->
-      <div class="navbar-menu" id="navbarMenu">
-        <div class="navbar-start" style="font-size: 1.2rem">
-          <a class="navbar-item" href="#PrivacyPolicyContent" onclick="toggleNavbar()"
-            >Política</a
-          >
-          <a class="navbar-item" href="#Contact" onclick="toggleNavbar()"
-            >Contacto</a
-            >
-        </div>
-        <div
-          class="navbar-end"
-          style="display: flex; align-items: center; height: 100%"
-        >
-          <a
-            class="button is-warning mr-3 is-hidden-touch"
-            href="https://x.com/DivStudioO/"
-            target="_blank"
-            >Siguenos en Twitter!</a
-          >
+      <div class="sm:hidden" id="navbarMenu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#PrivacyPolicyContent" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Política</a>
+          <a href="#Contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+          <a href="https://x.com/DivStudioO/" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Siguenos en Twitter!</a>
         </div>
       </div>
     </header>
 
 <!-- ~ ------------------- Privacy Policy ------------------- -->
-    <section class="hero is-fullheight" id="PrivacyPolicy">
-        <div class="hero-body" style="background-image: url('/Images/Privacy.png') !important; background-size: cover; background-position: center;">
-        <div class="container">
-            <h1 class="title is-size-1-mobile" style="font-size: 4rem; margin-top: 20px;">Políticas de Privacidad</h1>
-            <p class="subtitle" style="margin-bottom: 40px;">
+    <section class="pt-24 pb-12 bg-cover bg-center" id="PrivacyPolicy" style="background-image: url('/Images/Privacy.png')">
+        <div class="text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold text-white" style="font-size: 4rem; margin-top: 20px;">Políticas de Privacidad</h1>
+            <p class="text-xl text-gray-300 mt-4" style="margin-bottom: 40px;">
             Información sobre cómo tratamos los datos en esta página.
             </p>
         </div>
@@ -88,40 +95,40 @@
     </section>
 
 <!-- ~ ------------------- Privacy Policy Content ------------------- -->
-    <section class="section" id="PrivacyPolicyContent">
-        <div class="container">
-        <h2 class="title is-size-2-mobile policy-title">Detalles de la Política de Privacidad</h2>
-        <p class="policy-answer">
-            DivStudio (en adelante "La empresa"), asegura la máxima reserva y protección de aquellos datos de los Usuarios del sitio en Internet de su propiedad: <a href="https://divstudio.net">divstudio.net</a>, que ingresen al referido sitio Web. Este documento describe la "Política de Privacidad" que regula el tratamiento de los datos personales que los Usuarios registran en el sitio Web.
+    <section class="py-24 bg-gray-900" id="PrivacyPolicyContent">
+        <div class="container mx-auto px-4 text-white">
+        <h2 class="text-4xl font-bold mb-8">Detalles de la Política de Privacidad</h2>
+        <p class="mb-4">
+            DivStudio (en adelante "La empresa"), asegura la máxima reserva y protección de aquellos datos de los Usuarios del sitio en Internet de su propiedad: <a href="https://divstudio.net" class="text-blue-400 hover:underline">divstudio.net</a>, que ingresen al referido sitio Web. Este documento describe la "Política de Privacidad" que regula el tratamiento de los datos personales que los Usuarios registran en el sitio Web.
             </p>
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>OBJETIVO Y FINALIDAD</b></h3>
-            <p class="policy-answer">
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>OBJETIVO Y FINALIDAD</b></h3>
+            <p class="mb-4">
                 En nuestra empresa somos conscientes de la elevada consideración que tiene la privacidad de nuestros clientes y de todas aquellas personas que se interesan por nuestros productos y servicios. Siendo consecuentes con esta consideración tenemos el compromiso de respetar su privacidad y proteger la confidencialidad de su información privada y datos personales. Y es por ello que el objetivo de esta política de privacidad es dar a conocer a nuestros Usuarios la manera en que se recopilan, se tratan y se protegen los datos personales que a través de Internet son introducidos en el sitio Web a su disposición.
             </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 La información personal privada no incluye información que está disponible a través de fuentes accesibles al público, es decir, de medios de comunicación electrónica, óptica y de otra tecnología concebidos para facilitar información al público y abiertos a la consulta general, como son: las guías telefónicas, los diarios y revistas, los medios de comunicación social, las listas profesionales, los repertorios de jurisprudencia anonimizados, los Registros Públicos administrados por la Superintendencia Nacional de Registros Públicos, Registro nacional de identificación y estado civil - RENIEC, así como todo otro registro o banco de datos calificado como público conforme a ley, y la información que ostentan las entidades de la Administración Pública y que deba ser entregada a los administrados en aplicación de la Ley Nº 27806 - Ley de Transparencia y Acceso a la Información Pública.
                 </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 En DivStudio estamos especialmente interesados en ofrecer a nuestros Usuarios el más alto nivel de seguridad y proteger la confidencialidad de los datos que nos aporta. Por ello, las transacciones comerciales son realizadas en un entorno de servidor seguro bajo protocolo SSL (Secure Socket Layer), actualmente empleado por las empresas más importantes del mundo para realizar transacciones electrónicas seguras.
                 </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 El sitio Web ha sido creado y diseñado con la finalidad que DivStudio realice ofertas de servicios, así como facilitar otro tipo de información que creemos puede ser de interés y crear así un espacio de comunicación para los Usuarios.
                 </p>
         </div>
 
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>LEGISLACIÓN</b></h3>
-            <p class="policy-answer">
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>LEGISLACIÓN</b></h3>
+            <p class="mb-4">
                 Esta política se rige por la legislación peruana, en particular por la Ley N° 29733 - Ley de Protección de Datos Personales, modificada por el Decreto Legislativo 1353, Decreto Supremo N° 003-2013-JUS, Reglamento de la Ley N° 29733 y la Directiva de Seguridad de la Información.
             </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 Según la Ley N° 29733, los datos personales son cualquier información que identifica o hace identificable a una persona natural. El Tratamiento de Datos Personales es cualquier operación que permite la recopilación, registro, organización, almacenamiento, y procesamiento de datos personales.
             </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 DivStudio se adhiere a los principios de la Ley N° 29733:
             </p>
-            <ol class="policy-list">
+            <ol class="list-decimal list-inside ml-8 mb-4">
                 <li><strong>Legalidad:</strong> Rechazamos la recopilación de datos por medios fraudulentos o ilícitos.</li>
                 <li><strong>Consentimiento:</strong> El tratamiento de datos requiere su consentimiento.</li>
                 <li><strong>Finalidad:</strong> Los datos se recopilan para fines determinados, explícitos y lícitos, y no se usarán para otros fines incompatibles, salvo excepciones legales.</li>
@@ -133,137 +140,126 @@
             </ol>
         </div>
 
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>INFORMACIÓN</b></h3>
-            <p class="policy-answer">
-                Se informa a los Usuarios que los datos personales que introduzcan en los formularios que se encuentran en el apartado "Contacto" y en aquellos registrados en <a href="https://tally.so/r/w5lqbQ">Tally</a> serán tratados por DivStudio para poder contactar con estos, y se regirán por lo expuesto en esta Política de Privacidad y por las condiciones expuestas en el mismo formulario. 
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>INFORMACIÓN</b></h3>
+            <p class="mb-4">
+                Se informa a los Usuarios que los datos personales que introduzcan en los formularios que se encuentran en el apartado "Contacto" y en aquellos registrados en <a href="https://tally.so/r/w5lqbQ" class="text-blue-400 hover:underline">Tally</a> serán tratados por DivStudio para poder contactar con estos, y se regirán por lo expuesto en esta Política de Privacidad y por las condiciones expuestas en el mismo formulario.
             </p>
         </div>
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>CALIDAD DE LOS DATOS PERSONALES</b></h3>
-            <p class="policy-answer">
-                Los datos personales solicitados a los Usuarios, son datos básicos de contacto y son adecuados, pertinentes y no excesivos en relación con la finalidad para los que se recogen. Los datos personales a los que Divstudio tendrá acceso serán aquellos que el Usuario facilite voluntariamente rellenando los formularios puestos a tal efecto. 
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>CALIDAD DE LOS DATOS PERSONALES</b></h3>
+            <p class="mb-4">
+                Los datos personales solicitados a los Usuarios, son datos básicos de contacto y son adecuados, pertinentes y no excesivos en relación con la finalidad para los que se recogen. Los datos personales a los que Divstudio tendrá acceso serán aquellos que el Usuario facilite voluntariamente rellenando los formularios puestos a tal efecto.
             </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 Divstudio les proporciona a sus Usuarios los recursos técnicos adecuados para que tomen conocimiento de la presente Política de Privacidad y de cualquier otra información que pueda ser relevante; constituyendo el ingreso de Datos Personales o información confidencial en el sitio Web, la manifestación expresa de su consentimiento a la presente Política de Privacidad.
             </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 Los datos personales facilitados por los Usuarios tienen que ser exactos y correctos de forma que respondan con veracidad a su situación actual. En caso contrario estos datos serán cancelados. Los datos personales facilitados por los Usuarios son recopilados para el cumplimiento de las finalidades expuestas en este documento y no se usarán para otras finalidades incompatibles con las especificadas.
                 </p>
-            <p class="policy-answer">
+            <p class="mb-4">
                 Los datos personales serán cancelados cuando hayan dejado de ser necesarios para las finalidades para las cuales han sido recopilados. Sin embargo, se conservarán durante el tiempo en que pueda exigirse algún tipo de responsabilidad a Divstudio derivada de esta relación con los Usuarios.
                 </p>
         </div>
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>FINALIDAD DE LOS TRATAMIENTOS DE LA INFORMACIÓN PERSONAL </b></h3>
-            <p class="policy-answer">
-                Las finalidades de tratamiento de los datos personales que los Usuarios introducen en los diferentes formularios del sitio Web son para poder dar contestación a las consultas, peticiones y otro tipo de información que nos realicen a través de éstos y poder facilitar a posteriori cualquier información que Divstudio crea que puede ser de su interés. 
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>FINALIDAD DE LOS TRATAMIENTOS DE LA INFORMACIÓN PERSONAL </b></h3>
+            <p class="mb-4">
+                Las finalidades de tratamiento de los datos personales que los Usuarios introducen en los diferentes formularios del sitio Web son para poder dar contestación a las consultas, peticiones y otro tipo de información que nos realicen a través de éstos y poder facilitar a posteriori cualquier información que Divstudio crea que puede ser de su interés.
             </p>
-            <p class="policy-answer">
-                Asimismo, los datos personales proporcionados durante el proceso de afiliación serán tratados para el desarrollo, cumplimiento y ejecución del evento en desarrollo, para proporcionar al Usuario información acerca de los eventos de Divstudio o de otras empresas del grupo (cuyas actividades se relacionan con la creación de contenido digital y gaming, entre otros), incluyendo el envío de comunicación electrónica equivalente como mails y mensajes directos hacia plataformas de redes sociales. En caso que el Usuario no desee recibir las comunicaciones comerciales señaladas, podrá comunicarlo en cualquier momento al correo: <a href="mailto://informes@divstudio.net">informes@divstudio.net</a></p>
+            <p class="mb-4">
+                Asimismo, los datos personales proporcionados durante el proceso de afiliación serán tratados para el desarrollo, cumplimiento y ejecución del evento en desarrollo, para proporcionar al Usuario información acerca de los eventos de Divstudio o de otras empresas del grupo (cuyas actividades se relacionan con la creación de contenido digital y gaming, entre otros), incluyendo el envío de comunicación electrónica equivalente como mails y mensajes directos hacia plataformas de redes sociales. En caso que el Usuario no desee recibir las comunicaciones comerciales señaladas, podrá comunicarlo en cualquier momento al correo: <a href="mailto://informes@divstudio.net" class="text-blue-400 hover:underline">informes@divstudio.net</a></p>
         </div>
-        
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>TRATAMIENTO DE DATOS PERSONALES Y CONSENTIMIENTO</b></h3>
-            <p class="policy-answer">
+
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>TRATAMIENTO DE DATOS PERSONALES Y CONSENTIMIENTO</b></h3>
+            <p class="mb-4">
                 Los datos personales se almacenarán en las bases de datos de DivStudio y se tratarán para las finalidades expuestas. Solo el personal autorizado de DivStudio accederá a los datos para responder a las solicitudes de los Usuarios. El tratamiento de datos será legal y no se utilizarán para fines incompatibles con los especificados.
             </p>
         </div>
-        
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>COMUNICACIÓN POR TRASNFERENCIA DE DATOS PERSONALES</b></h3>
-            <p class="policy-answer">
+
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>COMUNICACIÓN POR TRASNFERENCIA DE DATOS PERSONALES</b></h3>
+            <p class="mb-4">
                 DivStudio respeta su privacidad. No compartiremos su información con terceros sin su consentimiento expreso, salvo con empresas relacionadas al rubro o subcontratadas para las actividades de fidelización. Sus datos no se transferirán a terceros fuera del grupo DivStudio o empresas subcontratadas, a menos que usted lo autorice expresamente. Sus datos podrán ser comunicados a entidades administrativas, judiciales o policiales si la ley lo exige.
             </p>
         </div>
-        
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>CONFIDENCIALIDAD DE LOS DATOS PERSONALES</b></h3>
-            <p class="policy-answer">
+
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>CONFIDENCIALIDAD DE LOS DATOS PERSONALES</b></h3>
+            <p class="mb-4">
                 Los datos personales se tratarán con total confidencialidad. DivStudio se compromete a guardar secreto profesional y garantiza la seguridad de sus datos adoptando las medidas necesarias.
             </p>
         </div>
-        
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>SEGURIDAD DE LOS DATOS PERSONALES</b></h3>
-            <p class="policy-answer">
+
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>SEGURIDAD DE LOS DATOS PERSONALES</b></h3>
+            <p class="mb-4">
                 DivStudio cumple con la normativa vigente y adopta medidas de seguridad para proteger sus datos personales, evitando su alteración, pérdida o acceso no autorizado. Consideramos el estado de la tecnología, la naturaleza de los datos y los riesgos a los que están expuestos. Implementamos medidas adicionales para reforzar la confidencialidad e integridad de la información, supervisando y evaluando continuamente nuestros procesos. Sin embargo, la transmisión de información por internet no es totalmente segura.  Aunque nos esforzamos por proteger sus datos, no podemos garantizar su seguridad absoluta durante la transmisión.  Usted proporciona la información bajo su propio riesgo. Recomendamos la máxima diligencia al compartir información personal con terceros para evitar riesgos. DivStudio no se responsabiliza por sustracciones, modificaciones o pérdidas de datos ilícitas.
             </p>
         </div>
-        
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>CONSENTIMIENTO</b></h3>
-            <p class="policy-answer">
+
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>CONSENTIMIENTO</b></h3>
+            <p class="mb-4">
                 Al aceptar esta Política de Privacidad, los Usuarios están de acuerdo con todos los aspectos expuestos en este documento y nos autorizan a tratar sus datos de carácter personal para las finalidades expuestas anteriormente.
             </p>
         </div>
 
-        <div class="policy-section">
-          <h3 class="subtitle is-size-3-mobile"><b>CONTACTO</b></h3>
-          <p class="policy-answer">Para consultas sobre esta política, contáctenos en: <a href="mailto:informes@divstudio.net">informes@divstudio.net</a>.</p>
+        <div class="mb-8">
+          <h3 class="text-3xl font-bold mb-4"><b>CONTACTO</b></h3>
+          <p class="mb-4">Para consultas sobre esta política, contáctenos en: <a href="mailto:informes@divstudio.net" class="text-blue-400 hover:underline">informes@divstudio.net</a>.</p>
         </div>
-        
-        <div class="policy-section">
-            <h3 class="subtitle is-size-3-mobile"><b>VIGENCIA Y MODIFICACIÓN</b></h3>
-            <p class="policy-answer">
+
+        <div class="mb-8">
+            <h3 class="text-3xl font-bold mb-4"><b>VIGENCIA Y MODIFICACIÓN</b></h3>
+            <p class="mb-4">
                 Esta Política de Privacidad se actualizó en Diciembre de 2024. DivStudio se reserva el derecho a modificarla si hay cambios legislativos, doctrinales, jurisprudenciales o empresariales. Las modificaciones se publicarán en este sitio web. Recomendamos revisar periódicamente esta política.
             </p>
         </div>
-
     </section>
 
     <!-- ~ ------------------- Contact ------------------- -->
-    <section class="hero is-fullheight" id="Contact">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-size-1-mobile" style="font-size: 4rem">Contacto</h1>
-          <p class="subtitle">
+    <section class="min-h-screen flex items-center justify-center bg-transparent" id="Contact">
+      <div class="text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-5xl font-bold text-white" style="font-size: 4rem">Contacto</h1>
+          <p class="text-xl text-gray-300 mt-4">
             Contáctanos para cualquier duda, sugerencia o colaboración.
           </p>
-          <form name="contact" method="POST" action="/contact.php">
-            <div class="columns">
-              <div class="column">
-                <div class="field">
-                  <label class="label">Nombre</label>
-                  <div class="control">
-                    <input
-                      class="input is-info"
-                      type="text"
-                      name="name"
-                      placeholder="Tu nombre"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="field">
-                  <label class="label">Email</label>
-                  <div class="control">
-                    <input
-                      class="input is-info"
-                      type="email"
-                      name="email"
-                      placeholder="Tu email"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Mensaje</label>
-              <div class="control">
-                <textarea
-                  class="textarea is-info"
-                  name="message"
-                  placeholder="Escribe tu mensaje aqui"
+          <form name="contact" method="POST" action="/contact.php" class="mt-8 max-w-xl mx-auto">
+            <div class="md:flex md:space-x-4">
+              <div class="w-full mb-4 text-left">
+                <label class="block text-white text-sm font-bold mb-2" for="name">Nombre</label>
+                <input
+                  class="bg-gray-800 border border-gray-700 rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                  type="text"
+                  name="name"
+                  placeholder="Tu nombre"
                   required
-                ></textarea>
+                />
+              </div>
+              <div class="w-full mb-4 text-left">
+                <label class="block text-white text-sm font-bold mb-2" for="email">Email</label>
+                <input
+                  class="bg-gray-800 border border-gray-700 rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                  type="email"
+                  name="email"
+                  placeholder="Tu email"
+                  required
+                />
               </div>
             </div>
-            <div class="control">
-              <button class="button is-warning" type="submit">Enviar</button>
+            <div class="mb-4 text-left">
+              <label class="block text-white text-sm font-bold mb-2" for="message">Mensaje</label>
+              <textarea
+                class="bg-gray-800 border border-gray-700 rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                name="message"
+                placeholder="Escribe tu mensaje aqui"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button class="border-2 border-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 hover:text-black transition-all duration-300 btn-glow" type="submit">Enviar</button>
             </div>
           </form>
         </div>
@@ -271,13 +267,121 @@
     </section>
 
     <!-- ~ ------------------- Footer ------------------- -->
-    <footer class="footer pb-6">
-      <div class="content has-text-centered">
+    <footer class="text-white p-4 text-center footer-custom-bg">
+      <div class="container mx-auto">
         <p>
-          <strong>DivStudios</strong> © 2025. Todos los derechos reservados. |
-          <a href="/Privacy">Politica de privacidad</a> |
+          <span class="font-bold">DivStudios</span> © 2025. Todos los derechos reservados. |
+          <a href="/Privacy" class="hover:text-gray-300">Política de privacidad</a> |
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
   </body>
 </html>

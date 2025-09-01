@@ -40,24 +40,20 @@ html::-webkit-scrollbar {
 /* Index Page Styles */
 
 #Welcome {
-  background-image: url('/Images/Welcome.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #AboutUs {
-  background-image: url('/Images/AboutUSBG.webp');
   background-position: center;
   background-size: cover;
 }
 
 #Team {
-  background-image: url('/Images/TeamBG.jpg');
   background-position: center;
 }
 
 #Contact {
-  background-image: url('/Images/Contact.jpg');
   background-position: center;
 }
 

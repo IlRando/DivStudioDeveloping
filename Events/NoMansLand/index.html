@@ -5,91 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>DivStudios - No Man's Land</title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
-    <link rel="stylesheet" href="/styles/no-mans-land.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/animate.min.css" />
-    <link rel="stylesheet" href="/styles/bulma.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="/styles/components.css" />
+    <link rel="stylesheet" href="/styles/custom.css" />
+    <style>
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #02000f;
+        z-index: -1;
+      }
+      .navbar-custom-bg {
+        background-color: rgba(0, 1, 12, 0.5);
+      }
+      .footer-custom-bg {
+        background-color: #00010c;
+      }
+    </style>
+
     <link rel="icon" type="/image/png" href="/Images/Logo.png" />
-    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <script src="/scripts/navbar.js"></script>
-    <script src="/scripts/tabs.js"></script>
+    <script src="/scripts/custom-tabs.js"></script>
   </head>
-  <body style="background-color: #02000f">
+  <body class="bg-gray-900 text-white">
+    <div id="particles-js"></div>
     <!-- ~ ------------------- Navbar ------------------- -->
-    <header class="navbar animate__animated animate__fadeInDown">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img
-            src="/Images/LogoLong.png"
-            alt="Logo"
-            style="max-height: 4rem"
-            class="is-hidden-tablet"
-            onclick="closeNavbar()"
-          />
-          <img
-            class="is-hidden-mobile"
-            src="/Images/Logo.png"
-            alt="Logo"
-            style="max-height: 5rem"
-            onclick="closeNavbar()"
-          />
-        </a>
-        <!-- Burger icon -->
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          onclick="toggleNavbar()"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+    <header class="fixed top-0 left-0 w-full z-10 navbar-custom-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a href="/">
+                <img
+                  src="/Images/LogoLong.png"
+                  alt="Logo"
+                  style="max-height: 4rem"
+                  class="sm:hidden"
+                />
+                <img
+                  class="hidden sm:block"
+                  src="/Images/Logo.png"
+                  alt="Logo"
+                  style="max-height: 5rem"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hidden sm:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="https://x.com/DivStudioO/" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">Siguenos en Twitter!</a>
+            </div>
+          </div>
+          <div class="-mr-2 flex sm:hidden">
+            <button onclick="toggleNavbar()" type="button" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- * ------------------- Navbar Menu ------------------- -->
-      <div class="navbar-menu" id="navbarMenu">
-        <div class="navbar-start" style="font-size: 1.2rem">
-
-        </div>
-        <div
-          class="navbar-end"
-          style="display: flex; align-items: center; height: 100%"
-        >
-          <a
-            class="button is-warning mr-3 is-hidden-touch"
-            href="https://x.com/DivStudioO/"
-            target="_blank"
-            >Siguenos en Twitter!</a
-          >
+      <div class="sm:hidden" id="navbarMenu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="https://x.com/DivStudioO/" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Siguenos en Twitter!</a>
         </div>
       </div>
     </header>
 
     <!-- ~ ------------------- Hero Section ------------------- -->
-    <section class="hero is-halfheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <img src="/Images/NoMansLand/No-Mans-Land.png" alt="No Man's Land" style="max-width: 100%;">
-        </div>
+    <section class="pt-24 pb-12">
+      <div class="container mx-auto px-4 text-center">
+        <img src="/Images/NoMansLand/No-mans-land.png" alt="No Man's Land">
       </div>
     </section>
 
     <!-- ~ ------------------- Tabs Section ------------------- -->
-    <section class="section">
-      <div class="container">
-        <div class="tabs is-boxed is-centered">
-          <ul>
-            <li class="is-active"><a>Participantes</a></li>
-            <li><a>Información general</a></li>
-            <li><a>Reglas</a></li>
-            <li><a>Mods</a></li>
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-center mb-8">
+          <ul class="flex tabs">
+            <li class="is-active"><a class="px-4 py-2 text-white border-b-2 border-blue-500">Participantes</a></li>
+            <li><a class="px-4 py-2 text-gray-400">Información general</a></li>
+            <li><a class="px-4 py-2 text-gray-400">Reglas</a></li>
+            <li><a class="px-4 py-2 text-gray-400">Mods</a></li>
           </ul>
         </div>
         <div id="tabContent">
@@ -97,15 +102,123 @@
         </div>
       </div>
     </section>
-    
+
     <!-- ~ ------------------- Footer ------------------- -->
-    <footer class="footer pb-6">
-      <div class="content has-text-centered">
+    <footer class="text-white p-4 text-center footer-custom-bg">
+      <div class="container mx-auto">
         <p>
-          <strong>DivStudios</strong> © 2025. Todos los derechos reservados. |
-          <a href="/Privacy">Politica de privacidad</a> |
+          <span class="font-bold">DivStudios</span> © 2025. Todos los derechos reservados. |
+          <a href="/Privacy" class="hover:text-gray-300">Politica de privacidad</a> |
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
   </body>
 </html>

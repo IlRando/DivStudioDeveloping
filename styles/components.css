@@ -1,0 +1,135 @@
+.content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.card {
+  background: linear-gradient(135deg, #001829, #0C0F11);
+  border: 1.5px solid #00253f;
+  box-shadow: #001d30 0px 3px 0px 0 !important;
+}
+
+.card-image {
+  height: 14rem; /* Set the desired height */
+  border-radius: 5% !important;
+  object-fit: cover; /* Add this property */
+  background-color: #0c0f1171 !important;
+  border-right: 1.5px solid #00253f9f;
+}
+
+.is-info {
+  background-color: #000431 !important;
+  border-color: #230050 !important;
+}
+
+/* todo: fix this shit colors */
+
+#Team .button {
+  margin: 0.25rem !important;
+  background: linear-gradient(135deg, #191714, #130F40); /* Example gradient from peach to light orange */
+}
+
+.button.is-outlined {
+  border-color: #5eb2fc !important;
+  color: #dad8d8 !important;
+}
+
+.button.is-outlined:hover {
+  border-color: #ccc !important; /* change to your desired hover border color */
+  color: #fff; /* change to your desired hover text color */
+  transition: border-color 0.25s ease-in-out, color 0.1s ease-in-out;
+}
+
+.button.is-link.is-outlined {
+  width: 80%; /* Make the button take up more space */
+  margin: 0.5rem auto; /* Center the button and add some margin */
+  display: block; /* Ensure the button is a block element */
+  text-align: center; /* Center the text */
+  background-color: #001829 !important;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.event-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.event-item div {
+  display: flex;
+  flex-direction: column; /* Stack title and info vertically */
+}
+
+.event-item h2 {
+  font-weight: bold; /* Make the title bold */
+  margin: 0;
+}
+
+.event-item p {
+  margin: 0;
+}
+
+#eventList {
+  margin-top: 50px; /* match the margin-top value of #eventDetails */
+}
+
+#eventDetails {
+  padding-left: 1.5rem;
+  margin-top: 50px; /* adjust this value to your needs */
+  padding-bottom: 150px; /* add some space inside the container */
+}
+
+@media (max-width: 768px) {
+  .event-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.event-details {
+  display: flex;
+  align-items: flex-start;
+}
+
+.event-details img {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.event-details-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.event-details-description {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.description-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
